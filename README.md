@@ -3,7 +3,7 @@
 A low-code prototype for IS615 Digital Transformation Strategy (sponsor: OceanX Education).
 It tests whether a route-personalised AI debrief raises post-tour survey completion and yields richer learning evidence than a static survey, and whether sharing those results across the partner network leads partners to make evidence-based programme decisions (the North Star metric).
 
-**Authors:** Koh Yi Jing Priscilla, Niharika Singavajhala
+**Author:** Koh Yi Jing Priscilla
 **Built with:** Claude artifact (used as a Power Apps equivalent)
 **Source file:** `oceanx-impact-loop.html`
 
@@ -30,8 +30,10 @@ The prototype opens on a **"One tour, three views" landing page** with one card 
    - **Mark as visited**, next/previous arrows and an **All stops** list.
 
    After the tour they answer a short swipe-or-tap card deck (true/false concept cards, an exhibit-clarity card, pledge cards), write one reflection sentence, and repeat the agency question to see their before→after result.
-3. **Impact dashboard (OceanX staff only):** headline results against targets, the partner network North Star, the survey method test (AI debrief vs static survey, the prototype's core hypothesis), agency shift, learning depth (0–3 rubric), stop-by-stop review flags with the most common misconception, results by audience, every response, CSV export and AI-drafted programme recommendations.
+   Finally, they can **optionally leave an email** (with a consent tick box) for one three-question check-in two weeks later. This gives OceanX a point of contact and a long-term measure. Only OceanX staff see emails; partners never do.
+3. **Impact dashboard (OceanX staff only):** opens with an **At a glance** panel: tour health, how many visitors can be reached for follow-up (with a demo "Send 2-week check-in" button), the network North Star, how many partners are behind, and **Next moves with partners**: auto-generated actions such as which partner to support with which lesson, which decisions are due for review, which partner to scale, and who needs more responses. Below that: headline results against targets, the partner network North Star, the survey method test (AI debrief vs static survey, the prototype's core hypothesis), agency shift, learning depth (0–3 rubric), stop-by-stop review flags with the most common misconception, results by audience, every response, CSV export and AI-drafted programme recommendations.
 4. **Partner hub (partner programme teams):** a partner signs in (simulated with a "Signed in as" picker) and sees:
+   - an **at-a-glance strip**: how many indicators they're above the network median on, learners debriefed, decisions logged, next review date and the North Star;
    - **their programme's core indicators** (concepts understood, agency shift, actionable intent, learning depth), each compared with the network median;
    - a **suggested next step** that names their biggest gap and the partner lesson that moved the same indicator;
    - **how they compare with the network:** one dot per programme on each indicator, with the network median and OceanX targets, plus a table view;
@@ -60,7 +62,7 @@ Everything is in one self-contained HTML file:
 
 Two database collections:
 
-- `responses`: one record per visitor keyed by route code. The pre-tour taps create it and the debrief completes it.
+- `responses`: one record per visitor keyed by route code. The pre-tour taps create it and the debrief completes it. An optional `contact` field holds the visitor's email, consent flag and follow-up timing.
 - `decisions`: one record per partner decision: programme, decision type, indicator it should move, lesson used as evidence (if any), what will change, review date and timestamp.
 
 Partner programmes are reported as aggregates on the same core indicators. The OceanX tour's figures are calculated live from `responses`; the other partners' figures are fixed illustrative values.
@@ -89,6 +91,7 @@ Saved records, status flags (`pre` → `started` → `complete`), timestamps and
 | Median completion time | ≤90 seconds |
 | Average concept recall | ≥2.0 (0–3 rubric) |
 | Actionable intent | ≥60% of responses |
+| Visitors reachable for follow-up | Share of debriefed visitors who leave an email (new measure, no target yet) |
 | **North Star:** partner programmes with a documented improvement or expansion decision using shared evidence | Rising each quarter (demo starts at 3 of 6 programmes, 50%) |
 
 ## Known limitations
@@ -99,6 +102,7 @@ Saved records, status flags (`pre` → `started` → `complete`), timestamps and
 - Visited stops are self-reported, not tracked by sensors.
 - The exhibit map layout and walking distances are illustrative, not OceanX's real floor plan.
 - The audio guide uses the device's built-in text-to-speech voice reading a short script; where speech isn't supported it plays silently with the transcript.
+- Visitor emails are stored with consent but no emails are actually sent; the "Send 2-week check-in" button only marks them as queued. About a third of demo visitors carry fictional `@example.com` addresses. A real pilot would need PDPA-compliant consent wording, a retention period and an unsubscribe link.
 - The QR hand-off assumes the visitor is signed in on their phone. A scanned QR link opens the tour guide directly; otherwise an unfinished route's code is pre-filled and the landing page shows first.
 - 40 labelled demo records fill the dashboard until real data arrives, and 3 labelled demo decisions seed the partner decision log.
 - The static control survey runs outside the app.
@@ -106,3 +110,14 @@ Saved records, status flags (`pre` → `started` → `complete`), timestamps and
 ## GenAI declaration
 
 The prototype was built with the help of Claude (Anthropic) via vibe coding, and Claude also serves as its AI capability.
+
+## Device testing
+
+Checked in a browser at phone width (375 px) and at iPad sizes: iPad mini (768 × 1024), iPad Air (820 × 1180), iPad Pro 12.9" (1024 × 1366), and landscape (1180 × 820, 1366 × 1024). No page scrolls sideways at any size. On a phone or portrait iPad, the staff dashboard's wide tables scroll inside their own boxes. These checks used browser screen-size emulation, so a final pass on a real iPad in Safari is still worth doing.
+
+## Version history
+
+- **v3:** OceanX logo in the top bar on every page (with a "student prototype, not an official OceanX site" note in the footer); at-a-glance panels for OceanX (with "Next moves with partners") and for partners; optional visitor email with consent for a two-week follow-up; iPad layout checks.
+- **v2:** landing page with three audience views (visitor, OceanX staff, partner) in sunlit, midnight and twilight colours; Partner hub with network benchmarks, shared lessons, decision log and North Star; survey method test shown on the staff dashboard.
+- **v1 (midterm):** route curation, phone tour guide, swipe debrief and impact dashboard.
+
