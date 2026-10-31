@@ -4,7 +4,7 @@
 (function(){
   const SEED = [{"code": "OX-D000", "arm": "test", "intent": "action", "zone": "polar", "baseline": 4, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "pre", "createdAt": "2026-09-02T10:01:00Z", "preSeconds": 24, "demo": true}, {"code": "OX-D001", "arm": "test", "intent": "science", "zone": "twilight", "baseline": 4, "route": ["migration", "biolum", "rov", "bluecarbon"], "status": "pre", "createdAt": "2026-09-03T10:02:00Z", "preSeconds": 13, "demo": true}, {"code": "OX-D002", "arm": "test", "intent": "curious", "zone": "polar", "baseline": 3, "route": ["ice", "krill", "biolum", "bluecarbon"], "status": "started", "createdAt": "2026-09-04T10:03:00Z", "preSeconds": 12, "demo": true, "surveyStartedAt": "2026-09-04T11:03:00Z", "lastStep": "q1"}, {"code": "OX-D003", "arm": "test", "intent": "curious", "zone": "reef", "baseline": 3, "route": ["coral", "sound", "biolum", "plastic"], "status": "started", "createdAt": "2026-09-05T10:04:00Z", "preSeconds": 22, "demo": true, "surveyStartedAt": "2026-09-05T11:04:00Z", "lastStep": "q1"}, {"code": "OX-D004", "arm": "test", "intent": "science", "zone": "reef", "baseline": 2, "route": ["coral", "sound", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-06T10:05:00Z", "preSeconds": 9, "demo": true, "surveyStartedAt": "2026-09-06T11:05:00Z", "lastStep": "submitted", "visited": ["sound", "rov", "plastic"], "post": 2, "answers": [{"q": "Baby fish find reefs by listening to them", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The deep sea has been fully mapped and explored", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic comes from land", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll carry a reusable bottle and bag", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll tell my family what we learned", "a": "I'll do it", "mode": "swipe", "type": "pledge"}], "wordCount": 0, "answerMode": "swipe", "surveySeconds": 36, "completedAt": "2026-09-06T11:05:36Z", "codingMethod": "swipe-estimate", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "sound", "statement": "Baby fish find reefs by listening to them", "answer": true, "truth": true, "correct": true, "ms": 3400}, {"type": "concept", "stop": "rov", "statement": "The deep sea has been fully mapped and explored", "answer": false, "truth": false, "correct": true, "ms": 4647}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic comes from land", "answer": true, "truth": true, "correct": true, "ms": 5282}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 4057}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": true, "ms": 2440}, {"type": "pledge", "stop": null, "statement": "I'll tell my family what we learned", "category": "share or advocate", "answer": true, "ms": 1621}]}, "coding": {"recall": 3, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["plastic", "rov", "sound"], "principles": [5, 6, 7], "action": "reduce plastic", "programme_feedback": "", "insight": "3 of 3 concept cards correct; pledged: carry a reusable bottle and bag.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 3, "swipe_intent": true, "recall_source": "swipe"}, "reflection": {"q": "", "a": "", "skipped": true}}, {"code": "OX-D005", "arm": "test", "intent": "action", "zone": "reef", "baseline": 3, "route": ["plankton", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-07T10:06:00Z", "preSeconds": 20, "demo": true, "surveyStartedAt": "2026-09-07T11:06:00Z", "lastStep": "submitted", "visited": ["sound", "plastic"], "post": 3, "answers": [{"q": "Healthy reefs are nearly silent so fish can rest", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic comes from land", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll tell my family what we learned", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll watch an ocean expedition film", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "You visited the reef soundscape booth and the plastic table. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most ocean plastic comes from land.", "mode": "text", "type": "reflection"}], "wordCount": 9, "answerMode": "swipe+text", "surveySeconds": 63, "completedAt": "2026-09-07T11:06:41Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "sound", "statement": "Healthy reefs are nearly silent so fish can rest", "answer": false, "truth": false, "correct": true, "ms": 4137}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic comes from land", "answer": true, "truth": true, "correct": true, "ms": 2899}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 2613}, {"type": "pledge", "stop": null, "statement": "I'll tell my family what we learned", "category": "share or advocate", "answer": true, "ms": 2862}, {"type": "pledge", "stop": null, "statement": "I'll watch an ocean expedition film", "category": "learn more", "answer": true, "ms": 3179}]}, "coding": {"recall": 2, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["plastic", "sound"], "principles": [5, 6], "action": "share or advocate", "programme_feedback": "", "insight": "Recalled that most ocean plastic comes from land.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 3, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the reef soundscape booth and the plastic table. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most ocean plastic comes from land.", "skipped": false}}, {"code": "OX-D006", "arm": "test", "intent": "science", "zone": "twilight", "baseline": 2, "route": ["migration", "biolum", "rov", "bluecarbon"], "status": "complete", "createdAt": "2026-09-08T10:07:00Z", "preSeconds": 8, "demo": true, "surveyStartedAt": "2026-09-08T11:07:00Z", "lastStep": "submitted", "visited": ["biolum", "rov", "bluecarbon"], "post": 4, "answers": [{"q": "Most deep sea animals make their own light", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most of the deep ocean has never been seen", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Mangroves store carbon", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Blue carbon mangroves was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll carry a reusable bottle and bag", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "You visited the dark room and the ROV station. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most deep sea animals make their own light. More seating near the ROV station would help.", "mode": "text", "type": "reflection"}], "wordCount": 19, "answerMode": "swipe+text", "surveySeconds": 56, "completedAt": "2026-09-08T11:07:37Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "biolum", "statement": "Most deep sea animals make their own light", "answer": true, "truth": true, "correct": true, "ms": 5597}, {"type": "concept", "stop": "rov", "statement": "Most of the deep ocean has never been seen", "answer": true, "truth": true, "correct": true, "ms": 4171}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves store carbon", "answer": true, "truth": true, "correct": true, "ms": 3471}, {"type": "feedback", "stop": "bluecarbon", "statement": "The Blue carbon mangroves was easy to understand", "answer": false, "ms": 3045}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": true, "ms": 1910}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 2099}]}, "coding": {"recall": 2, "intent": true, "intent_type": "both", "stops_mentioned": ["biolum", "bluecarbon", "rov"], "principles": [3, 5, 6, 7], "action": "reduce plastic", "programme_feedback": "More seating near the ROV station would help.; Visitor disagreed: \"The Blue carbon mangroves was easy to understand\"", "insight": "Recalled that most deep sea animals make their own light.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 3, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the dark room and the ROV station. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most deep sea animals make their own light. More seating near the ROV station would help.", "skipped": false}}, {"code": "OX-D007", "arm": "test", "intent": "family", "zone": "reef", "baseline": 3, "route": ["krill", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-09T10:08:00Z", "preSeconds": 17, "demo": true, "surveyStartedAt": "2026-09-09T11:08:00Z", "lastStep": "submitted", "visited": ["krill", "sound", "plastic"], "post": 4, "answers": [{"q": "Whales depend on tiny krill", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Healthy reefs are nearly silent so fish can rest", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Most ocean plastic is dumped by ships at sea", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll tell my family what we learned", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "I'll walk or cycle for short trips", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the krill and whale display and the reef soundscape booth. In a sentence, what will you take away or do differently after today?", "a": "I liked the krill and whale display, it was really cool to see. The twilight wall could explain the carbon part more simply.", "mode": "text", "type": "reflection"}], "wordCount": 23, "answerMode": "swipe+text", "surveySeconds": 62, "completedAt": "2026-09-09T11:08:46Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": true, "truth": true, "correct": true, "ms": 5148}, {"type": "concept", "stop": "sound", "statement": "Healthy reefs are nearly silent so fish can rest", "answer": true, "truth": false, "correct": false, "ms": 4581}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic is dumped by ships at sea", "answer": false, "truth": false, "correct": true, "ms": 4181}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": false, "ms": 2431}, {"type": "pledge", "stop": null, "statement": "I'll tell my family what we learned", "category": "share or advocate", "answer": false, "ms": 2521}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": false, "ms": 2149}]}, "coding": {"recall": 1, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["krill", "plastic"], "principles": [5, 6], "action": "none", "programme_feedback": "The twilight wall could explain the carbon part more simply.; Visitor disagreed: \"The Plastic pathway table was easy to understand\"", "insight": "Remembered the krill and whale display but not its key idea.", "takeaway": "", "concept_accuracy": 0.6666666666666666, "swipe_recall": 1, "swipe_intent": true, "written_recall": 1, "recall_source": "written"}, "reflection": {"q": "You visited the krill and whale display and the reef soundscape booth. In a sentence, what will you take away or do differently after today?", "a": "I liked the krill and whale display, it was really cool to see. The twilight wall could explain the carbon part more simply.", "skipped": false}}, {"code": "OX-D008", "arm": "test", "intent": "action", "zone": "polar", "baseline": 2, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "complete", "createdAt": "2026-09-10T10:09:00Z", "preSeconds": 21, "demo": true, "surveyStartedAt": "2026-09-10T11:09:00Z", "lastStep": "submitted", "visited": ["krill", "bluecarbon"], "post": 2, "answers": [{"q": "Krill are a type of seaweed", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Mangroves store carbon", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Blue carbon mangroves was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll watch an ocean expedition film", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "You visited the krill and whale display and the mangrove display. In a sentence, what will you take away or do differently after today?", "a": "I liked the mangrove display, it was really cool to see.", "mode": "text", "type": "reflection"}], "wordCount": 11, "answerMode": "swipe+text", "surveySeconds": 56, "completedAt": "2026-09-10T11:09:39Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "krill", "statement": "Krill are a type of seaweed", "answer": false, "truth": false, "correct": true, "ms": 4323}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves store carbon", "answer": true, "truth": true, "correct": true, "ms": 3801}, {"type": "feedback", "stop": "bluecarbon", "statement": "The Blue carbon mangroves was easy to understand", "answer": false, "ms": 2081}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 1803}, {"type": "pledge", "stop": null, "statement": "I'll watch an ocean expedition film", "category": "learn more", "answer": true, "ms": 2335}]}, "coding": {"recall": 1, "intent": true, "intent_type": "both", "stops_mentioned": ["bluecarbon", "krill"], "principles": [3, 5, 6], "action": "climate & energy", "programme_feedback": "Visitor disagreed: \"The Blue carbon mangroves was easy to understand\"", "insight": "Remembered the mangrove display but not its key idea.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 3, "swipe_intent": true, "written_recall": 1, "recall_source": "written"}, "reflection": {"q": "You visited the krill and whale display and the mangrove display. In a sentence, what will you take away or do differently after today?", "a": "I liked the mangrove display, it was really cool to see.", "skipped": false}}, {"code": "OX-D009", "arm": "test", "intent": "curious", "zone": "deep", "baseline": 3, "route": ["biolum", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-11T10:10:00Z", "preSeconds": 22, "demo": true, "surveyStartedAt": "2026-09-11T11:10:00Z", "lastStep": "submitted", "visited": ["biolum", "rov", "plastic"], "post": 3, "answers": [{"q": "Hardly any deep-sea animals can make light", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most of the deep ocean has never been seen", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Most ocean plastic is dumped by ships at sea", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll carry a reusable bottle and bag", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "I'll check where our seafood comes from", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the dark room and the ROV station. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most ocean plastic comes from land. The twilight wall could explain the carbon part more simply.", "mode": "text", "type": "reflection"}], "wordCount": 19, "answerMode": "swipe+text", "surveySeconds": 61, "completedAt": "2026-09-11T11:10:44Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "biolum", "statement": "Hardly any deep-sea animals can make light", "answer": false, "truth": false, "correct": true, "ms": 3166}, {"type": "concept", "stop": "rov", "statement": "Most of the deep ocean has never been seen", "answer": false, "truth": true, "correct": false, "ms": 5290}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic is dumped by ships at sea", "answer": false, "truth": false, "correct": true, "ms": 6478}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": false, "ms": 1943}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": false, "ms": 2777}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": false, "ms": 1587}]}, "coding": {"recall": 2, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["biolum", "plastic"], "principles": [5, 6, 7], "action": "none", "programme_feedback": "The twilight wall could explain the carbon part more simply.; Visitor disagreed: \"The Plastic pathway table was easy to understand\"", "insight": "Recalled that most ocean plastic comes from land.", "takeaway": "", "concept_accuracy": 0.6666666666666666, "swipe_recall": 1, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the dark room and the ROV station. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most ocean plastic comes from land. The twilight wall could explain the carbon part more simply.", "skipped": false}}, {"code": "OX-D010", "arm": "test", "intent": "action", "zone": "reef", "baseline": 3, "route": ["plankton", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-12T10:11:00Z", "preSeconds": 18, "demo": true, "surveyStartedAt": "2026-09-12T11:11:00Z", "lastStep": "submitted", "visited": ["plankton", "sound", "plastic"], "post": 3, "answers": [{"q": "Plankton make about half the oxygen we breathe", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Baby fish find reefs by listening to them", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic comes from land", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll carry a reusable bottle and bag", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "I'll check where our seafood comes from", "a": "I'll do it", "mode": "swipe", "type": "pledge"}], "wordCount": 0, "answerMode": "swipe", "surveySeconds": 47, "completedAt": "2026-09-12T11:11:47Z", "codingMethod": "swipe-estimate", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton make about half the oxygen we breathe", "answer": false, "truth": true, "correct": false, "ms": 5619}, {"type": "concept", "stop": "sound", "statement": "Baby fish find reefs by listening to them", "answer": true, "truth": true, "correct": true, "ms": 6347}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic comes from land", "answer": true, "truth": true, "correct": true, "ms": 4538}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 3508}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": false, "ms": 3066}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": true, "ms": 1550}]}, "coding": {"recall": 1, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["plastic", "sound"], "principles": [5, 6], "action": "sustainable seafood", "programme_feedback": "", "insight": "2 of 3 concept cards correct; misjudged Plankton microscope lab; pledged: check where our seafood comes from.", "takeaway": "", "concept_accuracy": 0.6666666666666666, "swipe_recall": 1, "swipe_intent": true, "recall_source": "swipe"}, "reflection": {"q": "", "a": "", "skipped": true}}, {"code": "OX-D011", "arm": "test", "intent": "curious", "zone": "reef", "baseline": 2, "route": ["coral", "sound", "biolum", "plastic"], "status": "complete", "createdAt": "2026-09-13T10:12:00Z", "preSeconds": 16, "demo": true, "surveyStartedAt": "2026-09-13T11:12:00Z", "lastStep": "submitted", "visited": ["coral", "sound", "biolum", "plastic"], "post": 3, "answers": [{"q": "Corals bleach when the water gets too warm", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Healthy reefs are nearly silent so fish can rest", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most deep sea animals make their own light", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic is dumped by ships at sea", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll tell my family what we learned", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll carry a reusable bottle and bag", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the coral nursery and the reef soundscape booth. In a sentence, what will you take away or do differently after today?", "a": "I learnt that young fish find reefs by listening for them. The twilight wall could explain the carbon part more simply.", "mode": "text", "type": "reflection"}], "wordCount": 21, "answerMode": "swipe+text", "surveySeconds": 59, "completedAt": "2026-09-13T11:12:48Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "coral", "statement": "Corals bleach when the water gets too warm", "answer": true, "truth": true, "correct": true, "ms": 6033}, {"type": "concept", "stop": "sound", "statement": "Healthy reefs are nearly silent so fish can rest", "answer": false, "truth": false, "correct": true, "ms": 4707}, {"type": "concept", "stop": "biolum", "statement": "Most deep sea animals make their own light", "answer": true, "truth": true, "correct": true, "ms": 4569}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic is dumped by ships at sea", "answer": true, "truth": false, "correct": false, "ms": 3062}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 3791}, {"type": "pledge", "stop": null, "statement": "I'll tell my family what we learned", "category": "share or advocate", "answer": true, "ms": 2086}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": false, "ms": 2329}]}, "coding": {"recall": 2, "intent": true, "intent_type": "both", "stops_mentioned": ["biolum", "coral", "sound"], "principles": [5, 7], "action": "share or advocate", "programme_feedback": "The twilight wall could explain the carbon part more simply.", "insight": "Recalled that young fish find reefs by listening for them.", "takeaway": "", "concept_accuracy": 0.75, "swipe_recall": 3, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the coral nursery and the reef soundscape booth. In a sentence, what will you take away or do differently after today?", "a": "I learnt that young fish find reefs by listening for them. The twilight wall could explain the carbon part more simply.", "skipped": false}}, {"code": "OX-D012", "arm": "test", "intent": "family", "zone": "polar", "baseline": 4, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "complete", "createdAt": "2026-09-14T10:13:00Z", "preSeconds": 15, "demo": true, "surveyStartedAt": "2026-09-14T11:13:00Z", "lastStep": "submitted", "visited": ["plankton", "ice", "krill", "bluecarbon"], "post": 5, "answers": [{"q": "Plankton are tiny fish that eat bigger fish", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Polar sea ice is growing every decade", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Whales depend on tiny krill", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Mangroves release more carbon than they store", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "The Blue carbon mangroves was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll carry a reusable bottle and bag", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that sea ice is shrinking because the ocean is warming.", "mode": "text", "type": "reflection"}], "wordCount": 12, "answerMode": "swipe+text", "surveySeconds": 70, "completedAt": "2026-09-14T11:13:48Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton are tiny fish that eat bigger fish", "answer": true, "truth": false, "correct": false, "ms": 6205}, {"type": "concept", "stop": "ice", "statement": "Polar sea ice is growing every decade", "answer": false, "truth": false, "correct": true, "ms": 6371}, {"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": true, "truth": true, "correct": true, "ms": 4633}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves release more carbon than they store", "answer": true, "truth": false, "correct": false, "ms": 2766}, {"type": "feedback", "stop": "bluecarbon", "statement": "The Blue carbon mangroves was easy to understand", "answer": true, "ms": 2933}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 2627}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": false, "ms": 3195}]}, "coding": {"recall": 2, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["ice", "krill"], "principles": [3, 5, 6], "action": "climate & energy", "programme_feedback": "", "insight": "Recalled that sea ice is shrinking because the ocean is warming.", "takeaway": "", "concept_accuracy": 0.5, "swipe_recall": 1, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that sea ice is shrinking because the ocean is warming.", "skipped": false}}, {"code": "OX-D013", "arm": "test", "intent": "family", "zone": "polar", "baseline": 3, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "complete", "createdAt": "2026-09-15T10:14:00Z", "preSeconds": 10, "demo": true, "surveyStartedAt": "2026-09-15T11:14:00Z", "lastStep": "submitted", "visited": ["plankton", "ice", "krill", "bluecarbon"], "post": 5, "answers": [{"q": "Plankton make about half the oxygen we breathe", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Sea ice is shrinking as things warm up", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Whales depend on tiny krill", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Mangroves store carbon", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Blue carbon mangroves was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll check where our seafood comes from", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "I'll carry a reusable bottle and bag", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that tiny plankton make about half the oxygen we breathe.", "mode": "text", "type": "reflection"}], "wordCount": 12, "answerMode": "swipe+text", "surveySeconds": 54, "completedAt": "2026-09-15T11:14:41Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton make about half the oxygen we breathe", "answer": true, "truth": true, "correct": true, "ms": 5259}, {"type": "concept", "stop": "ice", "statement": "Sea ice is shrinking as things warm up", "answer": true, "truth": true, "correct": true, "ms": 3156}, {"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": true, "truth": true, "correct": true, "ms": 5750}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves store carbon", "answer": true, "truth": true, "correct": true, "ms": 3177}, {"type": "feedback", "stop": "bluecarbon", "statement": "The Blue carbon mangroves was easy to understand", "answer": true, "ms": 2272}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": false, "ms": 3010}, {"type": "pledge", "stop": null, "statement": "I'll carry a reusable bottle and bag", "category": "reduce plastic", "answer": false, "ms": 2311}]}, "coding": {"recall": 2, "intent": false, "intent_type": "none", "stops_mentioned": ["bluecarbon", "ice", "krill", "plankton"], "principles": [3, 4, 5, 6], "action": "none", "programme_feedback": "", "insight": "Recalled that tiny plankton make about half the oxygen we breathe.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 2, "swipe_intent": false, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that tiny plankton make about half the oxygen we breathe.", "skipped": false}}, {"code": "OX-D014", "arm": "test", "intent": "family", "zone": "twilight", "baseline": 1, "route": ["krill", "migration", "biolum", "bluecarbon"], "status": "complete", "createdAt": "2026-09-16T10:15:00Z", "preSeconds": 23, "demo": true, "surveyStartedAt": "2026-09-16T11:15:00Z", "lastStep": "submitted", "visited": ["krill", "biolum", "bluecarbon"], "post": 2, "answers": [{"q": "Whales depend on tiny krill", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Hardly any deep-sea animals can make light", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Mangroves release more carbon than they store", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "The Blue carbon mangroves was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll check where our seafood comes from", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "You visited the krill and whale display and the dark room. In a sentence, what will you take away or do differently after today?", "a": "I liked the dark room, it was really cool to see.", "mode": "text", "type": "reflection"}], "wordCount": 11, "answerMode": "swipe+text", "surveySeconds": 63, "completedAt": "2026-09-16T11:15:46Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": false, "truth": true, "correct": false, "ms": 4649}, {"type": "concept", "stop": "biolum", "statement": "Hardly any deep-sea animals can make light", "answer": false, "truth": false, "correct": true, "ms": 4211}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves release more carbon than they store", "answer": true, "truth": false, "correct": false, "ms": 3517}, {"type": "feedback", "stop": "bluecarbon", "statement": "The Blue carbon mangroves was easy to understand", "answer": false, "ms": 3389}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 1527}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": true, "ms": 3558}]}, "coding": {"recall": 1, "intent": true, "intent_type": "both", "stops_mentioned": ["biolum"], "principles": [5, 7], "action": "climate & energy", "programme_feedback": "Visitor disagreed: \"The Blue carbon mangroves was easy to understand\"", "insight": "Remembered the dark room but not its key idea.", "takeaway": "", "concept_accuracy": 0.3333333333333333, "swipe_recall": 0, "swipe_intent": true, "written_recall": 1, "recall_source": "written"}, "reflection": {"q": "You visited the krill and whale display and the dark room. In a sentence, what will you take away or do differently after today?", "a": "I liked the dark room, it was really cool to see.", "skipped": false}}, {"code": "OX-D015", "arm": "test", "intent": "action", "zone": "deep", "baseline": 2, "route": ["plankton", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-17T10:16:00Z", "preSeconds": 11, "demo": true, "surveyStartedAt": "2026-09-17T11:16:00Z", "lastStep": "submitted", "visited": ["plankton", "vent", "rov", "plastic"], "post": 2, "answers": [{"q": "Plankton make about half the oxygen we breathe", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Vent creatures live on chemicals not sunlight", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The deep sea has been fully mapped and explored", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic comes from land", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll watch an ocean expedition film", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "I'll check where our seafood comes from", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the plankton lab and the vent model. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most of the deep ocean has never been seen. The twilight wall could explain the carbon part more simply.", "mode": "text", "type": "reflection"}], "wordCount": 22, "answerMode": "swipe+text", "surveySeconds": 64, "completedAt": "2026-09-17T11:16:52Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton make about half the oxygen we breathe", "answer": false, "truth": true, "correct": false, "ms": 2959}, {"type": "concept", "stop": "vent", "statement": "Vent creatures live on chemicals not sunlight", "answer": true, "truth": true, "correct": true, "ms": 5839}, {"type": "concept", "stop": "rov", "statement": "The deep sea has been fully mapped and explored", "answer": false, "truth": false, "correct": true, "ms": 5542}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic comes from land", "answer": true, "truth": true, "correct": true, "ms": 2939}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": false, "ms": 3201}, {"type": "pledge", "stop": null, "statement": "I'll watch an ocean expedition film", "category": "learn more", "answer": false, "ms": 3496}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": false, "ms": 2394}]}, "coding": {"recall": 2, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["plastic", "rov", "vent"], "principles": [2, 5, 6, 7], "action": "none", "programme_feedback": "The twilight wall could explain the carbon part more simply.; Visitor disagreed: \"The Plastic pathway table was easy to understand\"", "insight": "Recalled that most of the deep ocean has never been seen.", "takeaway": "", "concept_accuracy": 0.75, "swipe_recall": 2, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the plankton lab and the vent model. In a sentence, what will you take away or do differently after today?", "a": "I learnt that most of the deep ocean has never been seen. The twilight wall could explain the carbon part more simply.", "skipped": false}}, {"code": "OX-D016", "arm": "test", "intent": "action", "zone": "reef", "baseline": 2, "route": ["plankton", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-18T10:17:00Z", "preSeconds": 18, "demo": true, "surveyStartedAt": "2026-09-18T11:17:00Z", "lastStep": "submitted", "visited": ["plankton", "coral", "sound", "plastic"], "post": 3, "answers": [{"q": "Plankton are tiny fish that eat bigger fish", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Corals are plants that grow from seeds", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Baby fish find reefs by listening to them", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic is dumped by ships at sea", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll tell my family what we learned", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the plankton lab and the coral nursery. In a sentence, what will you take away or do differently after today?", "a": "I liked the reef soundscape booth, it was really cool to see.", "mode": "text", "type": "reflection"}], "wordCount": 12, "answerMode": "swipe+text", "surveySeconds": 64, "completedAt": "2026-09-18T11:17:46Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton are tiny fish that eat bigger fish", "answer": false, "truth": false, "correct": true, "ms": 5376}, {"type": "concept", "stop": "coral", "statement": "Corals are plants that grow from seeds", "answer": true, "truth": false, "correct": false, "ms": 4617}, {"type": "concept", "stop": "sound", "statement": "Baby fish find reefs by listening to them", "answer": true, "truth": true, "correct": true, "ms": 5704}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic is dumped by ships at sea", "answer": false, "truth": false, "correct": true, "ms": 3788}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 4100}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 3061}, {"type": "pledge", "stop": null, "statement": "I'll tell my family what we learned", "category": "share or advocate", "answer": false, "ms": 2352}]}, "coding": {"recall": 1, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["plankton", "plastic", "sound"], "principles": [3, 4, 5, 6], "action": "climate & energy", "programme_feedback": "", "insight": "Remembered the reef soundscape booth but not its key idea.", "takeaway": "", "concept_accuracy": 0.75, "swipe_recall": 3, "swipe_intent": true, "written_recall": 1, "recall_source": "written"}, "reflection": {"q": "You visited the plankton lab and the coral nursery. In a sentence, what will you take away or do differently after today?", "a": "I liked the reef soundscape booth, it was really cool to see.", "skipped": false}}, {"code": "OX-D017", "arm": "test", "intent": "family", "zone": "polar", "baseline": 2, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "complete", "createdAt": "2026-09-19T10:18:00Z", "preSeconds": 21, "demo": true, "surveyStartedAt": "2026-09-19T11:18:00Z", "lastStep": "submitted", "visited": ["plankton", "ice", "krill"], "post": 4, "answers": [{"q": "Plankton are tiny fish that eat bigger fish", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Polar sea ice is growing every decade", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Whales depend on tiny krill", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Krill to whale food web was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll check where our seafood comes from", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll watch an ocean expedition film", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that huge whales depend on tiny krill. The twilight wall could explain the carbon part more simply.", "mode": "text", "type": "reflection"}], "wordCount": 19, "answerMode": "swipe+text", "surveySeconds": 60, "completedAt": "2026-09-19T11:18:40Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "plankton", "statement": "Plankton are tiny fish that eat bigger fish", "answer": false, "truth": false, "correct": true, "ms": 4240}, {"type": "concept", "stop": "ice", "statement": "Polar sea ice is growing every decade", "answer": true, "truth": false, "correct": false, "ms": 3099}, {"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": true, "truth": true, "correct": true, "ms": 2869}, {"type": "feedback", "stop": "krill", "statement": "The Krill to whale food web was easy to understand", "answer": true, "ms": 3679}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": true, "ms": 3438}, {"type": "pledge", "stop": null, "statement": "I'll watch an ocean expedition film", "category": "learn more", "answer": true, "ms": 2891}]}, "coding": {"recall": 2, "intent": true, "intent_type": "both", "stops_mentioned": ["krill", "plankton"], "principles": [3, 4, 5, 6], "action": "sustainable seafood", "programme_feedback": "The twilight wall could explain the carbon part more simply.", "insight": "Recalled that huge whales depend on tiny krill.", "takeaway": "", "concept_accuracy": 0.6666666666666666, "swipe_recall": 1, "swipe_intent": true, "written_recall": 2, "recall_source": "written"}, "reflection": {"q": "You visited the plankton lab and the sea ice timeline. In a sentence, what will you take away or do differently after today?", "a": "I learnt that huge whales depend on tiny krill. The twilight wall could explain the carbon part more simply.", "skipped": false}}, {"code": "OX-D018", "arm": "test", "intent": "family", "zone": "reef", "baseline": 2, "route": ["krill", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-20T10:19:00Z", "preSeconds": 21, "demo": true, "surveyStartedAt": "2026-09-20T11:19:00Z", "lastStep": "submitted", "visited": ["krill", "coral", "sound", "plastic"], "post": 3, "answers": [{"q": "Whales depend on tiny krill", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Corals are plants that grow from seeds", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Baby fish find reefs by listening to them", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "Most ocean plastic is dumped by ships at sea", "a": "False", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Plastic pathway table was easy to understand", "a": "Yes", "mode": "swipe", "type": "feedback"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll check where our seafood comes from", "a": "Not for me", "mode": "swipe", "type": "pledge"}, {"q": "You visited the krill and whale display and the coral nursery. In a sentence, what will you take away or do differently after today?", "a": "I didn't know young fish find reefs by listening for them, so I want to cut down on driving short trips.", "mode": "text", "type": "reflection"}], "wordCount": 21, "answerMode": "swipe+text", "surveySeconds": 59, "completedAt": "2026-09-20T11:19:48Z", "codingMethod": "rubric-ai", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "krill", "statement": "Whales depend on tiny krill", "answer": true, "truth": true, "correct": true, "ms": 3530}, {"type": "concept", "stop": "coral", "statement": "Corals are plants that grow from seeds", "answer": false, "truth": false, "correct": true, "ms": 5563}, {"type": "concept", "stop": "sound", "statement": "Baby fish find reefs by listening to them", "answer": true, "truth": true, "correct": true, "ms": 3029}, {"type": "concept", "stop": "plastic", "statement": "Most ocean plastic is dumped by ships at sea", "answer": false, "truth": false, "correct": true, "ms": 6089}, {"type": "feedback", "stop": "plastic", "statement": "The Plastic pathway table was easy to understand", "answer": true, "ms": 2826}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 3193}, {"type": "pledge", "stop": null, "statement": "I'll check where our seafood comes from", "category": "sustainable seafood", "answer": false, "ms": 2154}]}, "coding": {"recall": 3, "intent": true, "intent_type": "behaviour", "stops_mentioned": ["coral", "krill", "plastic", "sound"], "principles": [5, 6], "action": "climate & energy", "programme_feedback": "", "insight": "Recalled that young fish find reefs by listening for them and linked it to their own actions.", "takeaway": "", "concept_accuracy": 1.0, "swipe_recall": 3, "swipe_intent": true, "written_recall": 3, "recall_source": "written"}, "reflection": {"q": "You visited the krill and whale display and the coral nursery. In a sentence, what will you take away or do differently after today?", "a": "I didn't know young fish find reefs by listening for them, so I want to cut down on driving short trips.", "skipped": false}}, {"code": "OX-D019", "arm": "test", "intent": "science", "zone": "twilight", "baseline": 2, "route": ["migration", "biolum", "rov", "bluecarbon"], "status": "complete", "createdAt": "2026-09-21T10:20:00Z", "preSeconds": 15, "demo": true, "surveyStartedAt": "2026-09-21T11:20:00Z", "lastStep": "submitted", "visited": ["migration", "biolum", "rov", "bluecarbon"], "post": 2, "answers": [{"q": "Animals swim up at night and take carbon down", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Hardly any deep-sea animals can make light", "a": "True", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Most of the deep ocean has never been seen", "a": "False", "mode": "swipe", "type": "concept", "correct": false}, {"q": "Mangroves store carbon", "a": "True", "mode": "swipe", "type": "concept", "correct": true}, {"q": "The Twilight migration wall was easy to understand", "a": "No", "mode": "swipe", "type": "feedback"}, {"q": "I'll watch an ocean expedition film", "a": "I'll do it", "mode": "swipe", "type": "pledge"}, {"q": "I'll walk or cycle for short trips", "a": "I'll do it", "mode": "swipe", "type": "pledge"}], "wordCount": 0, "answerMode": "swipe", "surveySeconds": 42, "completedAt": "2026-09-21T11:20:42Z", "codingMethod": "swipe-estimate", "debrief": {"source": "ai", "cards": [{"type": "concept", "stop": "migration", "statement": "Animals swim up at night and take carbon down", "answer": false, "truth": true, "correct": false, "ms": 3397}, {"type": "concept", "stop": "biolum", "statement": "Hardly any deep-sea animals can make light", "answer": true, "truth": false, "correct": false, "ms": 6235}, {"type": "concept", "stop": "rov", "statement": "Most of the deep ocean has never been seen", "answer": false, "truth": true, "correct": false, "ms": 3142}, {"type": "concept", "stop": "bluecarbon", "statement": "Mangroves store carbon", "answer": true, "truth": true, "correct": true, "ms": 2997}, {"type": "feedback", "stop": "migration", "statement": "The Twilight migration wall was easy to understand", "answer": false, "ms": 3526}, {"type": "pledge", "stop": null, "statement": "I'll watch an ocean expedition film", "category": "learn more", "answer": true, "ms": 1572}, {"type": "pledge", "stop": null, "statement": "I'll walk or cycle for short trips", "category": "climate & energy", "answer": true, "ms": 2964}]}, "coding": {"recall": 0, "intent": true, "intent_type": "both", "stops_mentioned": ["bluecarbon"], "principles": [3, 6], "action": "learn more", "programme_feedback": "Visitor disagreed: \"The Twilight migration wall was easy to understand\"", "insight": "1 of 4 concept cards correct; misjudged Bioluminescence dark room, ROV pilot station, Twilight migration wall; pledged: watch an ocean expedition film.", "takeaway": "", "concept_accuracy": 0.25, "swipe_recall": 0, "swipe_intent": true, "recall_source": "swipe"}, "reflection": {"q": "", "a": "", "skipped": true}}, {"code": "OX-D020", "arm": "control", "intent": "family", "zone": "twilight", "baseline": 2, "route": ["krill", "migration", "biolum", "bluecarbon"], "status": "pre", "createdAt": "2026-09-22T10:21:00Z", "preSeconds": 23, "demo": true}, {"code": "OX-D021", "arm": "control", "intent": "curious", "zone": "reef", "baseline": 1, "route": ["coral", "sound", "biolum", "plastic"], "status": "pre", "createdAt": "2026-09-23T10:22:00Z", "preSeconds": 24, "demo": true}, {"code": "OX-D022", "arm": "control", "intent": "action", "zone": "twilight", "baseline": 2, "route": ["plankton", "migration", "biolum", "bluecarbon"], "status": "started", "createdAt": "2026-09-24T10:23:00Z", "preSeconds": 13, "demo": true, "surveyStartedAt": "2026-09-24T11:23:00Z", "lastStep": "opened"}, {"code": "OX-D023", "arm": "control", "intent": "curious", "zone": "twilight", "baseline": 2, "route": ["plankton", "migration", "biolum", "bluecarbon"], "status": "started", "createdAt": "2026-09-25T10:24:00Z", "preSeconds": 13, "demo": true, "surveyStartedAt": "2026-09-25T11:24:00Z", "lastStep": "opened"}, {"code": "OX-D024", "arm": "control", "intent": "family", "zone": "reef", "baseline": 1, "route": ["krill", "coral", "sound", "plastic"], "status": "started", "createdAt": "2026-09-26T10:25:00Z", "preSeconds": 12, "demo": true, "surveyStartedAt": "2026-09-26T11:25:00Z", "lastStep": "opened"}, {"code": "OX-D025", "arm": "control", "intent": "action", "zone": "reef", "baseline": 2, "route": ["plankton", "coral", "sound", "plastic"], "status": "started", "createdAt": "2026-09-27T10:26:00Z", "preSeconds": 18, "demo": true, "surveyStartedAt": "2026-09-27T11:26:00Z", "lastStep": "opened"}, {"code": "OX-D026", "arm": "control", "intent": "action", "zone": "polar", "baseline": 3, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "started", "createdAt": "2026-09-28T10:27:00Z", "preSeconds": 24, "demo": true, "surveyStartedAt": "2026-09-28T11:27:00Z", "lastStep": "opened"}, {"code": "OX-D027", "arm": "control", "intent": "family", "zone": "polar", "baseline": 2, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "started", "createdAt": "2026-09-01T10:28:00Z", "preSeconds": 19, "demo": true, "surveyStartedAt": "2026-09-01T11:28:00Z", "lastStep": "opened"}, {"code": "OX-D028", "arm": "control", "intent": "curious", "zone": "reef", "baseline": 2, "route": ["coral", "sound", "biolum", "plastic"], "status": "started", "createdAt": "2026-09-02T10:29:00Z", "preSeconds": 13, "demo": true, "surveyStartedAt": "2026-09-02T11:29:00Z", "lastStep": "opened"}, {"code": "OX-D029", "arm": "control", "intent": "action", "zone": "polar", "baseline": 3, "route": ["plankton", "ice", "krill", "bluecarbon"], "status": "complete", "createdAt": "2026-09-03T10:30:00Z", "preSeconds": 19, "demo": true, "surveyStartedAt": "2026-09-03T11:30:00Z", "lastStep": "submitted", "post": 4, "answers": [{"q": "What did you learn today?", "a": "I liked the sea ice timeline, the visuals were really nice."}, {"q": "Any comments or suggestions for us?", "a": "The dark room could use a short audio guide."}], "wordCount": 20, "surveySeconds": 81, "completedAt": "2026-09-03T11:30:21Z", "codingMethod": "ai", "coding": {"recall": 1, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["ice"], "principles": [], "action": "none", "programme_feedback": "The Twilight migration wall needs a clearer explanation of the carbon link.", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 5}, {"code": "OX-D030", "arm": "control", "intent": "science", "zone": "deep", "baseline": 3, "route": ["plankton", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-04T10:31:00Z", "preSeconds": 16, "demo": true, "surveyStartedAt": "2026-09-04T11:31:00Z", "lastStep": "submitted", "post": 4, "answers": [{"q": "What did you learn today?", "a": "At the hydrothermal vent model I learnt that vent creatures live on chemicals not sunlight. I had no idea."}, {"q": "Any comments or suggestions for us?", "a": "Blue carbon panel text was too dense for kids."}], "wordCount": 28, "surveySeconds": 148, "completedAt": "2026-09-04T11:31:28Z", "codingMethod": "ai", "coding": {"recall": 2, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["vent"], "principles": [2, 5], "action": "none", "programme_feedback": "Would love a take-home card summarising the route.", "insight": "Recalled that vent creatures live on chemicals not sunlight.", "takeaway": ""}, "rating": 4}, {"code": "OX-D031", "arm": "control", "intent": "action", "zone": "twilight", "baseline": 2, "route": ["plankton", "migration", "biolum", "bluecarbon"], "status": "complete", "createdAt": "2026-09-05T10:32:00Z", "preSeconds": 10, "demo": true, "surveyStartedAt": "2026-09-05T11:32:00Z", "lastStep": "submitted", "post": 2, "answers": [{"q": "What did you learn today?", "a": "At the bioluminescence dark room I learnt that most deep sea animals make their own light. I had no idea."}, {"q": "Any comments or suggestions for us?", "a": "Blue carbon panel text was too dense for kids."}], "wordCount": 29, "surveySeconds": 161, "completedAt": "2026-09-05T11:32:41Z", "codingMethod": "ai", "coding": {"recall": 2, "intent": true, "intent_type": "programme feedback", "stops_mentioned": ["biolum"], "principles": [5, 7], "action": "none", "programme_feedback": "More seating near the ROV station would help families.", "insight": "Recalled that most deep sea animals make their own light.", "takeaway": ""}, "rating": 4}, {"code": "OX-D032", "arm": "control", "intent": "family", "zone": "deep", "baseline": 2, "route": ["krill", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-06T10:33:00Z", "preSeconds": 20, "demo": true, "surveyStartedAt": "2026-09-06T11:33:00Z", "lastStep": "submitted", "post": 2, "answers": [{"q": "What did you learn today?", "a": "I liked the krill to whale food web, the visuals were really nice."}, {"q": "Any comments or suggestions for us?", "a": ""}], "wordCount": 13, "surveySeconds": 162, "completedAt": "2026-09-06T11:33:42Z", "codingMethod": "ai", "coding": {"recall": 1, "intent": false, "intent_type": "none", "stops_mentioned": ["krill"], "principles": [], "action": "none", "programme_feedback": "", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 3}, {"code": "OX-D033", "arm": "control", "intent": "action", "zone": "reef", "baseline": 2, "route": ["plankton", "coral", "sound", "plastic"], "status": "complete", "createdAt": "2026-09-07T10:34:00Z", "preSeconds": 11, "demo": true, "surveyStartedAt": "2026-09-07T11:34:00Z", "lastStep": "submitted", "post": 3, "answers": [{"q": "What did you learn today?", "a": "At the reef soundscape booth I learnt that baby fish find reefs by listening to them. I had no idea."}, {"q": "Any comments or suggestions for us?", "a": ""}], "wordCount": 20, "surveySeconds": 105, "completedAt": "2026-09-07T11:34:45Z", "codingMethod": "ai", "coding": {"recall": 2, "intent": false, "intent_type": "none", "stops_mentioned": ["sound"], "principles": [5], "action": "none", "programme_feedback": "", "insight": "Recalled that baby fish find reefs by listening to them.", "takeaway": ""}, "rating": 3}, {"code": "OX-D034", "arm": "control", "intent": "curious", "zone": "deep", "baseline": 3, "route": ["biolum", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-08T10:35:00Z", "preSeconds": 16, "demo": true, "surveyStartedAt": "2026-09-08T11:35:00Z", "lastStep": "submitted", "post": 4, "answers": [{"q": "What did you learn today?", "a": "At the plastic pathway table I learnt that most ocean plastic comes from land. I had no idea."}, {"q": "Any comments or suggestions for us?", "a": ""}], "wordCount": 18, "surveySeconds": 161, "completedAt": "2026-09-08T11:35:41Z", "codingMethod": "ai", "coding": {"recall": 2, "intent": false, "intent_type": "none", "stops_mentioned": ["plastic"], "principles": [6], "action": "none", "programme_feedback": "", "insight": "Recalled that most ocean plastic comes from land.", "takeaway": ""}, "rating": 3}, {"code": "OX-D035", "arm": "control", "intent": "curious", "zone": "polar", "baseline": 2, "route": ["ice", "krill", "biolum", "bluecarbon"], "status": "complete", "createdAt": "2026-09-09T10:36:00Z", "preSeconds": 20, "demo": true, "surveyStartedAt": "2026-09-09T11:36:00Z", "lastStep": "submitted", "post": 3, "answers": [{"q": "What did you learn today?", "a": "I liked the krill to whale food web, the visuals were really nice."}, {"q": "Any comments or suggestions for us?", "a": "Thanks."}], "wordCount": 14, "surveySeconds": 87, "completedAt": "2026-09-09T11:36:27Z", "codingMethod": "ai", "coding": {"recall": 1, "intent": false, "intent_type": "none", "stops_mentioned": ["krill"], "principles": [], "action": "none", "programme_feedback": "", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 5}, {"code": "OX-D036", "arm": "control", "intent": "action", "zone": "deep", "baseline": 3, "route": ["plankton", "vent", "rov", "plastic"], "status": "complete", "createdAt": "2026-09-10T10:37:00Z", "preSeconds": 17, "demo": true, "surveyStartedAt": "2026-09-10T11:37:00Z", "lastStep": "submitted", "post": 4, "answers": [{"q": "What did you learn today?", "a": "I liked the rov pilot station, the visuals were really nice."}, {"q": "Any comments or suggestions for us?", "a": "Thanks."}], "wordCount": 12, "surveySeconds": 116, "completedAt": "2026-09-10T11:37:56Z", "codingMethod": "ai", "coding": {"recall": 1, "intent": false, "intent_type": "none", "stops_mentioned": ["rov"], "principles": [], "action": "none", "programme_feedback": "", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 3}, {"code": "OX-D037", "arm": "control", "intent": "curious", "zone": "twilight", "baseline": 1, "route": ["plankton", "migration", "biolum", "bluecarbon"], "status": "complete", "createdAt": "2026-09-11T10:38:00Z", "preSeconds": 13, "demo": true, "surveyStartedAt": "2026-09-11T11:38:00Z", "lastStep": "submitted", "post": 1, "answers": [{"q": "What did you learn today?", "a": "I liked the blue carbon mangroves, the visuals were really nice."}, {"q": "Any comments or suggestions for us?", "a": "Thanks."}], "wordCount": 12, "surveySeconds": 130, "completedAt": "2026-09-11T11:38:10Z", "codingMethod": "ai", "coding": {"recall": 1, "intent": false, "intent_type": "none", "stops_mentioned": ["bluecarbon"], "principles": [], "action": "none", "programme_feedback": "", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 4}, {"code": "OX-D038", "arm": "control", "intent": "curious", "zone": "twilight", "baseline": 3, "route": ["plankton", "migration", "biolum", "bluecarbon"], "status": "complete", "createdAt": "2026-09-12T10:39:00Z", "preSeconds": 23, "demo": true, "surveyStartedAt": "2026-09-12T11:39:00Z", "lastStep": "submitted", "post": 3, "answers": [{"q": "What did you learn today?", "a": "The exhibits were great and fun."}, {"q": "Any comments or suggestions for us?", "a": "Thanks."}], "wordCount": 7, "surveySeconds": 139, "completedAt": "2026-09-12T11:39:19Z", "codingMethod": "ai", "coding": {"recall": 0, "intent": false, "intent_type": "none", "stops_mentioned": [], "principles": [], "action": "none", "programme_feedback": "", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 4}, {"code": "OX-D039", "arm": "control", "intent": "curious", "zone": "reef", "baseline": 3, "route": ["coral", "sound", "biolum", "plastic"], "status": "complete", "createdAt": "2026-09-13T10:40:00Z", "preSeconds": 22, "demo": true, "surveyStartedAt": "2026-09-13T11:40:00Z", "lastStep": "submitted", "post": 4, "answers": [{"q": "What did you learn today?", "a": "Really enjoyed it, thanks!"}, {"q": "Any comments or suggestions for us?", "a": "Would love a take-home card summarising the route."}], "wordCount": 12, "surveySeconds": 97, "completedAt": "2026-09-13T11:40:37Z", "codingMethod": "ai", "coding": {"recall": 0, "intent": true, "intent_type": "programme feedback", "stops_mentioned": [], "principles": [], "action": "none", "programme_feedback": "Would love a take-home card summarising the route.", "insight": "Positive about the visit but named no specific concept.", "takeaway": ""}, "rating": 4}]; const KEY='oceanx-demo-v1';
   /* one browser-local store per collection: "responses" (visitor records) and "decisions" (partner decision log) */
-  const SEEDS={responses:SEED, decisions:[]};
+  const SEEDS={responses:SEED, decisions:[], shares:[], followups:[]};
   const keyOf=n=>n==='responses'?KEY:KEY+'-'+n;
   const stores={}, subs={};
   const storeOf=n=>{ if(!stores[n]){ let saved=null; try{ saved=JSON.parse(localStorage.getItem(keyOf(n))||'null'); }catch(e){}
@@ -447,7 +447,7 @@ nav.steps .tabs{display:flex;gap:4px;margin-left:auto}
 nav.steps .nav-home{color:var(--ink)}
 nav.steps .nav-home svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6}
 nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--tide);padding-left:6px}
-@media (max-width:700px){nav.steps .aud-name{display:none}}
+@media (max-width:700px){nav.steps .aud-name{display:none}nav.steps{flex-wrap:wrap;overflow:visible}nav.steps .tabs{margin-left:0;width:100%;flex-wrap:wrap}}
 
 /* landing page: one card per audience, each in its own colours */
 #v-home>h1,#v-home>.lede{text-align:center;margin-left:auto;margin-right:auto}
@@ -506,6 +506,73 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
 .stay label.cons input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--tide)}
 .stay .done{color:var(--good);font-weight:600;font-size:.92rem}
 
+/* ===== v4: phone registration, kiosk reset, follow-up queue, partner sharing, trends ===== */
+.phone:not(.reg) #ph-reg{display:none}
+.phone.reg .ph-app>*:not(#ph-reg){display:none!important}
+#ph-reg{display:flex;flex-direction:column;gap:10px;padding:4px 0 6px}
+#ph-reg h4{margin:0;font-family:var(--display);font-size:1.15rem;line-height:1.2}
+#ph-reg p{margin:0;font-size:.84rem;color:var(--muted)}
+#ph-reg input[type=email]{font:inherit;padding:11px 13px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);width:100%}
+#ph-reg input[type=email]:focus{border-color:var(--tide);outline:none}
+#ph-reg label.cons{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;color:var(--muted);cursor:pointer}
+#ph-reg label.cons input{width:18px;height:18px;margin-top:1px;flex:none;accent-color:var(--tide)}
+#ph-reg .req{font-size:.72rem;font-weight:700;color:var(--glow);margin-left:4px}
+#ph-reg .fam{background:var(--card);border-radius:10px;padding:8px 10px;font-size:.78rem;color:var(--muted)}
+.kiosk-reset{font-size:.84rem;color:var(--muted);margin:12px 0 0}
+.kiosk-reset b{color:var(--ink);font-variant-numeric:tabular-nums}
+.fu-date{margin-top:16px;border-top:1px dashed rgba(255,255,255,.25);padding-top:12px;font-size:.92rem;color:#B6D0D8}
+.fu-date b{color:#fff}
+.funnel{display:grid;gap:5px;margin-top:4px}
+.funnel div{display:grid;grid-template-columns:1fr auto;gap:8px;font-size:.82rem;color:var(--muted);position:relative;padding:3px 8px;border-radius:6px;overflow:hidden}
+.funnel div i{position:absolute;inset:0 auto 0 0;background:var(--tide-soft);z-index:0}
+.funnel div span,.funnel div b{position:relative;z-index:1}
+.funnel div b{color:var(--ink);font-variant-numeric:tabular-nums}
+.queue-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.grid2.qgrid{grid-template-columns:1fr}
+table.queue{min-width:680px}
+table.queue td:nth-child(3){max-width:520px}
+table.queue td{vertical-align:top}
+table.queue input[type=date]{font:inherit;font-size:.84rem;padding:5px 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);color-scheme:dark}
+table.queue tr.isdone td{opacity:.55}
+.st{font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;display:inline-block}
+.st.overdue{background:var(--glow-soft);color:var(--warn)} .st.soon{background:var(--glow-soft);color:var(--glow)}
+.st.upcoming{background:var(--tide-soft);color:var(--tide)} .st.done{background:var(--paper);color:var(--good);border:1px solid var(--line)}
+.qtype{font-size:.72rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.qbtn{border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:4px 11px;font-size:.8rem;font-weight:600;white-space:nowrap}
+.qbtn:hover{border-color:var(--tide)}
+.inbox{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.inbox li{border-left:3px solid var(--tide);padding:6px 0 6px 12px;font-size:.9rem}
+.inbox li.support{border-left-color:var(--glow)}
+.inbox small{display:block;color:var(--muted)}
+.trend-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.trend-tabs button{border:1.5px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:600}
+.trend-tabs button[aria-pressed="true"]{background:var(--tide);border-color:var(--tide);color:var(--on-accent)}
+.trend-wrap{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:18px;align-items:start}
+@media (max-width:860px){.trend-wrap{grid-template-columns:1fr}}
+.trend svg{display:block;width:100%;height:auto}
+.trend svg text{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.tsum{display:grid;gap:10px}
+.tsum div{background:var(--paper);border-radius:12px;padding:10px 12px}
+.tsum b{display:block;font-family:var(--display);font-size:1.4rem}
+.tsum span{font-size:.8rem;color:var(--muted)}
+table.then{min-width:560px;margin-top:14px}
+.spark{display:block;margin-top:6px}
+.spark-lab{font-size:.76rem;color:var(--muted);margin-top:2px}
+.p-alert{margin-top:18px;border:1.5px solid var(--glow);border-radius:16px;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--glow-soft)}
+.p-alert p{margin:0;font-size:.92rem}
+.p-alert .btn{padding:8px 16px;font-size:.86rem}
+.admin-note{margin-top:14px;border:1px dashed var(--line);border-radius:12px;padding:8px 12px;font-size:.86rem;color:var(--muted)}
+.admin-note b{color:var(--ink)}
+.sh-tabs{display:flex;gap:4px;background:var(--paper);border-radius:999px;padding:3px;margin:6px 0 12px;flex-wrap:wrap}
+.sh-tabs button{border:0;background:transparent;border-radius:999px;padding:6px 12px;font-size:.84rem;font-weight:600;color:var(--muted)}
+.sh-tabs button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.radios{display:flex;flex-wrap:wrap;gap:6px}
+.radios label{flex-direction:row!important;align-items:center;gap:6px!important;font-weight:500!important;border:1.5px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer}
+.radios label:has(input:checked){border-color:var(--tide);background:var(--tide-soft)}
+.radios input{accent-color:var(--tide)}
+.fu-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.fu-list li{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:.88rem;padding:8px 10px;border-radius:10px;background:var(--paper)}
+
 /* partner hub */
 .p-hero{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px}
 @media (max-width:860px){.p-hero{grid-template-columns:1fr}}
@@ -552,8 +619,9 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
 .tag{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--tide-soft);color:var(--tide)}
 .tag.gap{background:var(--glow-soft);color:var(--glow)}
 .lesson .btn{margin-top:auto;align-self:flex-start;padding:7px 14px;font-size:.84rem}
-.dform{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
-@media (max-width:620px){.dform{grid-template-columns:1fr}}
+.dform{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:8px}
+@media (max-width:620px){.dform{grid-template-columns:minmax(0,1fr)}}
+.dform select,.dform input,.dform textarea{min-width:0;width:100%;max-width:100%}
 .dform label{display:flex;flex-direction:column;gap:5px;font-size:.86rem;font-weight:600}
 .dform .full{grid-column:1/-1}
 .dform select,.dform input,.dform textarea{font:inherit;font-weight:400;font-size:.92rem;padding:9px 11px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
@@ -622,8 +690,8 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
       <span class="depth">Midnight zone</span>
       <span class="who">OceanX Education staff</span>
       <h2>Measure and improve the tour</h2>
-      <p>Results against targets, stop-by-stop review flags, the survey method test and AI-drafted recommendations.</p>
-      <dl><dt>Sees</dt><dd>Every individual response, scores and exports</dd><dt>Access</dt><dd>Internal, staff sign-in only</dd></dl>
+      <p>Results against targets, a dated follow-up queue, progress over time and AI-drafted recommendations. Master admin: can open every view.</p>
+      <dl><dt>Sees</dt><dd>Every individual response, scores and exports, plus the visitor and partner views</dd><dt>Access</dt><dd>Internal, staff sign-in only</dd></dl>
       <button type="button" class="enter" data-go="dash">Enter OceanX view</button>
     </article>
     <article class="aud-card" data-aud="partner">
@@ -639,7 +707,7 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
 
 <!-- ============ 1. PRE-TOUR ROUTE CURATION ============ -->
 <section class="view" id="v-pre" aria-labelledby="pre-h">
-  <p class="kicker">Before your visit</p>
+  <p class="kicker">On the iPad at the entrance</p>
   <h1 id="pre-h">Three taps to plan your dive.</h1>
   <p class="lede">Tell us what interests you most and we'll curate a bespoke experience for you in this exhibition.</p>
   <div class="pre-grid">
@@ -657,7 +725,7 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
 <section class="view" id="v-post" aria-labelledby="post-h">
   <p class="kicker">During and after your visit</p>
   <h1 id="post-h">Tell us how the visit went.</h1>
-  <p class="lede">Scan the QR code on your route card to open your tour guide, then take the post-tour survey when you finish. You'll be surprised how your inputs matter to ocean conservation efforts.</p>
+  <p class="lede">Scan the QR code on your route card with your phone, register with your email, and your tour guide opens. Take the post-tour survey when you finish. You'll be surprised how your inputs matter to ocean conservation efforts.</p>
   <div class="deb">
     <div class="panel">
       <h3>Your tour</h3>
@@ -671,6 +739,7 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
         <div class="phone" id="phone">
           <div class="ph-bar" aria-hidden="true"><span id="ph-clock">10:24</span><span class="ph-notch"></span><span>5G ▮▮▮</span></div>
           <div class="ph-app">
+            <div id="ph-reg" aria-live="polite"></div>
             <div class="ph-head"><div><div class="ph-eyebrow">OceanX tour guide</div><div class="ph-title" id="ph-title"></div></div><div class="ph-count" id="ph-count"></div></div>
             <div class="ph-dots" id="ph-dots" aria-hidden="true"></div>
             <div class="ph-tabs" role="tablist" aria-label="Tour guide views">
@@ -755,7 +824,7 @@ nav.steps .aud-name{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-t
       <p class="lede">See how your programme scores on the same core indicators as every other programme in the OceanX network, learn what has worked elsewhere, and record the decisions you make from that evidence.</p>
     </div>
     <div class="tools no-print">
-      <label class="toggle">Signed in as
+      <label class="toggle"><span id="p-who-label">Signed in as</span>
         <select id="p-who" class="sel" aria-label="Partner organisation (demo sign-in)"></select></label>
       <button class="btn ghost" id="p-print">Print or save as PDF</button>
     </div>
@@ -867,6 +936,8 @@ function assignArm(){
       renderDash(); renderPartner();
       tryAutoOpen();
     }, err=>console.warn(err));
+    db.collection("shares").onSnapshot(snap=>{ liveShares=snap.docs.map(d=>d.data()).filter(Boolean); renderDash(); renderPartner(); }, err=>console.warn(err));
+    db.collection("followups").onSnapshot(snap=>{ liveFollowups=snap.docs.map(d=>d.data()).filter(Boolean); renderDash(); }, err=>console.warn(err));
     db.collection("decisions").onSnapshot(snap=>{
       liveDecisions = snap.docs.map(d=>d.data()).filter(Boolean);
       renderDash(); renderPartner();
@@ -894,9 +965,12 @@ function tryAutoOpen(){
   openSurvey();
 }
 function withDemoContact(r){
-  if(!r || !r.demo || r.status!=="complete" || r.contact) return r;
+  if(!r || !r.demo || r.status==="pre" || r.contact) return r;
   const h=[...r.code].reduce((a,c)=>a+c.charCodeAt(0),0);
-  return h%3===0 ? {...r, contact:{email:`visitor.${r.code.slice(-3).toLowerCase()}@example.com`, consent:true, followUp:"2 weeks", at:r.completedAt, demo:true}} : r;
+  const at=r.surveyStartedAt||r.createdAt;
+  const c={email:`visitor.${r.code.slice(-3).toLowerCase()}@example.com`, consent:true, marketing:h%5<2, registeredAt:at, demo:true};
+  if(r.status==="complete") c.followUpDue=followUpDate(r.completedAt);
+  return {...r, contact:c};
 }
 function tourLink(code){ return APP_URL+"#"+code; }
 function drawQR(el,code){
@@ -908,18 +982,34 @@ function drawQR(el,code){
 
 /* ================= 1. ROUTE CURATION ================= */
 const pre = {step:0, intent:null, zone:null, baseline:null, code:null, route:null, startedAt:null};
+/* Shared iPad kiosk: once a route card is shown, the screen resets for the next visitor after a minute without a touch. */
+const KIOSK_IDLE = 60;
+let kioskT = null, kioskLeft = KIOSK_IDLE;
+function kioskReset(){ kioskStop(); Object.assign(pre,{step:0,intent:null,zone:null,baseline:null,code:null,route:null,startedAt:null}); renderQ(); renderDive(); }
+function kioskStop(){ clearInterval(kioskT); kioskT=null; }
+function kioskStart(){
+  kioskStop(); kioskLeft=KIOSK_IDLE;
+  const tick=()=>{ const el=$("#kiosk-reset"); if(!el||!pre.code){ kioskStop(); return; }
+    if(!$("#v-pre").classList.contains("on")) return;          // only counts down while the kiosk screen is showing
+    el.innerHTML=`This iPad resets for the next visitor in <b>${kioskLeft}s</b>.`;
+    if(--kioskLeft<0) kioskReset(); };
+  tick(); kioskT=setInterval(tick,1000);
+}
+$("#v-pre").addEventListener("pointerdown",()=>{ if(kioskT) kioskLeft=KIOSK_IDLE; });
 function renderQ(){
   const box = $("#qbox");
   const dots = `<div class="dots" aria-hidden="true">${[0,1,2].map(i=>`<i class="${i<pre.step||pre.code?'done':''}"></i>`).join("")}</div>`;
   if(pre.code){
     box.innerHTML = `<div class="qhead"><h3>You're set</h3>${dots}</div>
-      <p style="margin:0">Scan the QR code on your route card with your phone. It opens your tour guide, and your post-tour survey is waiting at the end. No code to type.</p>
+      <p style="margin:0">Scan the QR code on your route card with your phone. You'll register with your email there (nothing personal is typed on this iPad), then your tour guide opens, with the post-tour survey waiting at the end.</p>
       <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
-        <button class="btn" id="to-post">Open tour guide on this device</button>
+        <button class="btn" id="to-post">Demo: open the phone guide here</button>
         <button class="btn ghost" id="restart">Plan another visitor</button>
-      </div>`;
-    $("#to-post").onclick=()=>{ $("#code-in").value=pre.code; show("post"); openSurvey(); };
-    $("#restart").onclick=()=>{Object.assign(pre,{step:0,intent:null,zone:null,baseline:null,code:null,route:null,startedAt:null});renderQ();renderDive();};
+      </div>
+      <p class="kiosk-reset" id="kiosk-reset" aria-live="off"></p>`;
+    $("#to-post").onclick=()=>{ kioskStop(); $("#code-in").value=pre.code; show("post"); openSurvey(); };
+    $("#restart").onclick=kioskReset;
+    kioskStart();
     return;
   }
   const steps = [
@@ -1005,12 +1095,41 @@ async function openSurvey(){
     $("#visit-list").innerHTML=row.route.map((id,i)=>`<li><label><input type="checkbox" value="${id}"><span><b>${i+1}. ${STOPS[id].name}</b><span class="look">Look for how ${esc(STOPS[id].concept)}.</span></span></label></li>`).join("");
     $("#visited-box").hidden=false; $("#start-deb").disabled=false;
     tgInit(row);
+    renderReg(deb.row);
     $("#swipe-ui").hidden=true; $("#scale-box").hidden=true; $("#flash").textContent=""; $("#ai-note").innerHTML="";
-    $("#chat").innerHTML=`<div class="msg ai">Welcome! Your route: ${esc(INTENTS[row.intent].label)} through the ${esc(ZONES[row.zone].label.toLowerCase())}. Follow the map in your tour guide, play the audio guide at each stop, and mark each one as you visit it. When you've finished, tap "start my debrief" and your survey begins here.</div>`;
+    $("#chat").innerHTML= !deb.row.contact?.email ? `<div class="msg ai">Welcome! Register with your email on your phone to unlock your tour guide. It only takes a moment.</div>` : `<div class="msg ai">Welcome! Your route: ${esc(INTENTS[row.intent].label)} through the ${esc(ZONES[row.zone].label.toLowerCase())}. Follow the map in your tour guide, play the audio guide at each stop, and mark each one as you visit it. When you've finished, tap "start my debrief" and your survey begins here.</div>`;
     setProg(0,"Not started");
   }
 }
 
+
+/* ---- phone registration: the first screen after scanning the QR code ----
+   Email is required to open the guide (route + one follow-up about this visit).
+   Marketing is a separate, unticked, optional box. Partners never see either. */
+const followUpDate = iso => { const d=new Date(iso||Date.now()); d.setDate(d.getDate()+14); return d.toISOString().slice(0,10); };
+function renderReg(row){
+  const ph=$("#phone"), box=$("#ph-reg");
+  if(row.contact?.email){ ph.classList.remove("reg"); box.innerHTML=""; return; }
+  ph.classList.add("reg");
+  box.innerHTML=`<div class="ph-eyebrow">OceanX tour guide · ${esc(row.code)}</div>
+    <h4>Register to start your tour</h4>
+    <p>We'll use your email for your route and one short check-in about this visit. Nothing else unless you say so below.</p>
+    <label for="reg-email" style="font-size:.84rem;font-weight:600">Email<span class="req">Required</span></label>
+    <input type="email" id="reg-email" placeholder="you@example.com" autocomplete="email" inputmode="email">
+    <label class="cons"><input type="checkbox" id="reg-mkt"><span>Optional: send me news about OceanX exhibitions and events. I can unsubscribe at any time.</span></label>
+    <div class="fam">${row.intent==="family"?"<b>Visiting with children?</b> ":""}If you're with children, a parent or guardian should register on their own phone.</div>
+    <p class="err" id="reg-err" hidden style="margin:0"></p>
+    <button type="button" class="btn" id="reg-go">Open my tour guide</button>
+    <p style="font-size:.74rem">Only OceanX Education staff see your email; partner organisations never do.</p>`;
+  $("#reg-go").onclick=async()=>{
+    const email=$("#reg-email").value.trim(), err=$("#reg-err"); err.hidden=true;
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ err.textContent="That email doesn't look right. Check it and try again."; err.hidden=false; return; }
+    deb.row={...deb.row, contact:{email, consent:true, marketing:$("#reg-mkt").checked, registeredAt:new Date().toISOString()}};
+    await saveRow(deb.row);
+    renderReg(deb.row);
+    $("#chat").innerHTML=`<div class="msg ai">You're registered. Your route: ${esc(INTENTS[deb.row.intent].label)} through the ${esc(ZONES[deb.row.zone].label.toLowerCase())}. Follow the map in your tour guide, play the audio guide at each stop, and mark each one as you visit it. When you've finished, tap "start my debrief" and your survey begins here.</div>`;
+  };
+}
 
 /* ---- phone tour guide: exhibit map, directions and audio guide ---- */
 const MAPPOS = {plastic:[92,206],bluecarbon:[228,206],coral:[46,146],sound:[104,164],plankton:[160,138],krill:[218,164],ice:[276,146],migration:[104,86],biolum:[216,86],vent:[104,32],rov:[216,32]};
@@ -1409,6 +1528,7 @@ async function finishTest(post){
   const done={...deb.row, post, answers:deckAnswers(), wordCount:wc(refl.a), answerMode:refl.a?"swipe+text":"swipe",
     reflection:refl, debrief:{source:DK.source, cards:DK.results}, coding, codingMethod:method,
     status:"complete", lastStep:"submitted", surveySeconds, completedAt:new Date().toISOString()};
+  if(done.contact?.email) done.contact={...done.contact, followUpDue:followUpDate(done.completedAt)};
   await saveChain;
   const ok=await saveRow(done);
   setProg(3,"Complete");
@@ -1422,28 +1542,7 @@ async function finishTest(post){
     <p style="margin:0">${con.filter(r=>r.correct).length} of ${con.length} cards right. ${esc(coding.takeaway)}</p>
     <div style="margin-top:10px">${coding.principles.map(p=>`<span class="chip">${OLP[p]}</span>`).join("")}${pledges.map(p=>`<span class="chip">${esc(p.statement)}</span>`).join("")}</div>
     ${ok?"":`<p class="small" style="color:var(--glow)">This response couldn't be saved to the shared dashboard (you may have view-only access).</p>`}
-    <div class="stay" id="stay">${stayForm()}</div></div>`;
-  deb.done=done; bindStay();
-}
-/* Optional point of contact: one email for a two-week follow-up. Never required, never shown to partners. */
-function stayForm(){
-  return `<h4>Stay in touch? <span style="font-weight:500;font-size:.85rem;color:#9FC1CC">Optional</span></h4>
-    <p>Leave your email and we'll send one three-question check-in in two weeks, to see what stuck. Nothing else.</p>
-    <div class="row"><input type="email" id="stay-email" placeholder="you@example.com" autocomplete="email" inputmode="email" aria-label="Email address"><button type="button" class="btn" id="stay-go">Keep me posted</button></div>
-    <label class="cons"><input type="checkbox" id="stay-ok"><span>I agree OceanX Education may email me about this visit. Only OceanX staff see my email; partners never do. I can unsubscribe at any time.</span></label>
-    <p class="err" id="stay-err" hidden></p>`;
-}
-function bindStay(){
-  const go=$("#stay-go"); if(!go) return;
-  go.onclick=async()=>{
-    const email=$("#stay-email").value.trim(), err=$("#stay-err"); err.hidden=true;
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ err.textContent="That email doesn't look right. Check it and try again."; err.hidden=false; return; }
-    if(!$("#stay-ok").checked){ err.textContent="Tick the box to agree, or simply skip this step."; err.hidden=false; return; }
-    go.disabled=true;
-    const row={...deb.done, contact:{email, consent:true, followUp:"2 weeks", at:new Date().toISOString()}};
-    deb.done=row; await saveRow(row);
-    $("#stay").innerHTML=`<p class="done">Thanks. We'll check in with you in two weeks.</p>`;
-  };
+    ${done.contact?.email?`<p class="fu-date">We'll email you a three-question check-in on <b>${new Date(done.contact.followUpDue).toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"long"})}</b>, to see what stuck.${done.contact.marketing?" You'll also get OceanX news, as you asked.":""}</p>`:""}</div>`;
 }
 
 /* ================= shared rubric scoring (arm-blind) ================= */
@@ -1648,6 +1747,7 @@ function renderDash(){
   ${false&&pending.length?`<div class="banner"><span>${pending.length} written response${pending.length===1?" is":"s are"} waiting for AI rubric scoring${sample?"":". Open this page where AI is allowed to score them"}.</span>${sample?`<button class="btn" id="code-btn" ${scoring?"disabled":""}>${scoring?"Scoring…":"Score "+pending.length+" now"}</button>`:""}</div>`:""}
 
   ${staffGlance(R,I)}
+  ${queueCard(R)}
 
   <div class="hyp">
     <div class="verdict">
@@ -1669,6 +1769,7 @@ function renderDash(){
     </div>
   </div>
 
+  ${trendCard()}
   ${abSection(R)}
 
   <div class="grid2">
@@ -1745,7 +1846,7 @@ function renderDash(){
         const detail = r.debrief?.cards
           ? `<ul class="ans">${r.debrief.cards.map(c=>`<li><span class="mk ${c.type==="concept"?(c.correct?"ok":"bad"):""}">${c.type==="concept"?(c.correct?"✓":"✗"):c.type==="pledge"?"◆":"●"}</span>${esc(c.statement)} <span class="muted">→ ${esc(KIND[c.type][c.answer?"yes":"no"])}${c.type==="concept"&&!c.correct?` (actually ${c.truth?"true":"false"})`:""}</span></li>`).join("")}</ul>`
           : `<ul class="ans">${(r.answers||[]).map(a=>`<li><span class="mk">●</span>${esc(a.q)} <span class="muted">→ ${esc(a.a||"(blank)")}</span></li>`).join("")}</ul>`;
-        return `<tr class="frow" data-code="${r.code}" tabindex="0" aria-expanded="${open}"><td><b>${r.code}</b>${r.contact?.consent?`<span class="mail-tag" title="Agreed to a follow-up email">✉ follow-up</span>`:""}<div class="small muted">${d?d.toLocaleDateString(undefined,{day:"numeric",month:"short"}):""}${r.demo?" · demo":""}${(r.arm==="control")?` <span class="arm-tag control">written</span>`:""}</div></td>
+        return `<tr class="frow" data-code="${r.code}" tabindex="0" aria-expanded="${open}"><td><b>${r.code}</b>${r.contact?.email?`<span class="mail-tag" title="Registered on their phone${r.contact.marketing?"; agreed to marketing":""}">✉${r.contact.marketing?" + news":""}</span>`:""}<div class="small muted">${d?d.toLocaleDateString(undefined,{day:"numeric",month:"short"}):""}${r.demo?" · demo":""}${(r.arm==="control")?` <span class="arm-tag control">written</span>`:""}</div></td>
           <td class="small">${INTENTS[r.intent]?.label||""}<div class="muted">${ZONES[r.zone]?.label||""}</div></td>
           <td class="num">${r.baseline} → <b>${r.post??"–"}</b></td><td class="num">${conTxt}</td><td class="small">${reflCell}</td><td class="small">${commit}</td></tr>
           ${open?`<tr class="fdetail"><td colspan="6">${reflTxt?`<p class="refl"><b>Reflection:</b> “${esc(reflTxt)}” ${lvl} ${r.coding?.intent?'<span class="lvl">Actionable intent</span>':""}</p>`:""}${exp&&r.debrief?`<p class="refl"><b>Experience:</b> ${exp}</p>`:""}${detail}${r.coding?.insight?`<p class="small muted" style="margin:6px 0 0">${esc(r.coding.insight)}</p>`:""}</td></tr>`:""}`;}).join("")}</tbody>
@@ -1763,7 +1864,7 @@ function renderDash(){
   });
   if($("#more-btn")) $("#more-btn").onclick=()=>{ dash.limit+=12; renderDash(); };
   el.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>show(b.dataset.go));
-  if($("#fu-btn")) $("#fu-btn").onclick=()=>{ const b=$("#fu-btn"); b.disabled=true; b.textContent="Queued (demo: nothing is sent)"; };
+  bindQueue(el); bindTrend(el);
 }
 
 function abSection(R){
@@ -1809,9 +1910,9 @@ async function scorePending(list){
 
 $("#csv-btn").onclick=async()=>{
   const R=rows();
-  const head=["code","demo","arm","intent","zone","baseline","route","status","last_step","pre_seconds","survey_seconds","rating","post","agency_shift","word_count","recall","intent_flag","intent_type","theme_count","stops_mentioned","principles","action","programme_feedback","insight","coding_method","created_at","survey_started_at","completed_at","answers","swipe_cards","reflection","recall_source","swipe_recall_estimate","contact_email","follow_up_consent"];
+  const head=["code","demo","arm","intent","zone","baseline","route","status","last_step","pre_seconds","survey_seconds","rating","post","agency_shift","word_count","recall","intent_flag","intent_type","theme_count","stops_mentioned","principles","action","programme_feedback","insight","coding_method","created_at","survey_started_at","completed_at","answers","swipe_cards","reflection","recall_source","swipe_recall_estimate","contact_email","registered_at","marketing_consent","follow_up_due"];
   const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
-  const lines=[head.join(",")].concat(R.map(r=>[r.code,r.demo?1:0,r.arm||"",r.intent,r.zone,r.baseline,(r.route||[]).join("|"),r.status,r.lastStep??"",r.preSeconds??"",r.surveySeconds??"",r.rating??"",r.post??"",r.post?r.post-r.baseline:"",r.wordCount??"",r.coding?.recall??"",r.coding?(r.coding.intent?1:0):"",r.coding?.intent_type??"",r.coding?themeCount(r):"",(r.coding?.stops_mentioned||[]).join("|"),(r.coding?.principles||[]).join("|"),r.coding?.action??"",r.coding?.programme_feedback??"",r.coding?.insight??"",r.codingMethod??"",r.createdAt,r.surveyStartedAt??"",r.completedAt??"",(r.answers||[]).map(p=>`Q: ${p.q} A: ${p.a}`).join(" || "),(r.debrief?.cards||[]).map(c=>`${c.type}:${c.stop||""}:${c.answer?"right":"left"}${c.type==="concept"?(c.correct?":correct":":wrong"):""}:${c.ms}ms`).join(" | "),r.reflection?.a??"",r.coding?.recall_source??"",r.coding?.swipe_recall??"",r.contact?.consent?r.contact.email:"",r.contact?.consent?1:0].map(q).join(",")));
+  const lines=[head.join(",")].concat(R.map(r=>[r.code,r.demo?1:0,r.arm||"",r.intent,r.zone,r.baseline,(r.route||[]).join("|"),r.status,r.lastStep??"",r.preSeconds??"",r.surveySeconds??"",r.rating??"",r.post??"",r.post?r.post-r.baseline:"",r.wordCount??"",r.coding?.recall??"",r.coding?(r.coding.intent?1:0):"",r.coding?.intent_type??"",r.coding?themeCount(r):"",(r.coding?.stops_mentioned||[]).join("|"),(r.coding?.principles||[]).join("|"),r.coding?.action??"",r.coding?.programme_feedback??"",r.coding?.insight??"",r.codingMethod??"",r.createdAt,r.surveyStartedAt??"",r.completedAt??"",(r.answers||[]).map(p=>`Q: ${p.q} A: ${p.a}`).join(" || "),(r.debrief?.cards||[]).map(c=>`${c.type}:${c.stop||""}:${c.answer?"right":"left"}${c.type==="concept"?(c.correct?":correct":":wrong"):""}:${c.ms}ms`).join(" | "),r.reflection?.a??"",r.coding?.recall_source??"",r.coding?.swipe_recall??"",r.contact?.email??"",r.contact?.registeredAt??"",r.contact?(r.contact.marketing?1:0):"",r.contact?.followUpDue??""].map(q).join(",")));
   try{ await downloads.save({filename:"oceanx-impact-loop.csv",data:lines.join("\n")}); }catch(e){ console.warn(e); }
 };
 
@@ -1839,13 +1940,14 @@ Write 4 short numbered recommendations (1-2 sentences each) that cite the number
 const MIN_N = 10;   // groups smaller than this are never shown to other partners
 const PROGRAMMES = [
   {id:"ox",  org:"OceanX Education",          name:"Personalised exhibition tour", type:"Exhibition",       share:"named", live:true},
-  {id:"csc", org:"Coastline Science Centre",  name:"Reef Explorers school visits", type:"School programme", share:"anon",  n:212, done:151, acc:.68, shift:.6, intent:.52, recall:1.7},
-  {id:"tln", org:"Tidepool Learning Network", name:"Family rockpool weekends",     type:"Family workshop",  share:"named", n:96,  done:74,  acc:.74, shift:.9, intent:.71, recall:1.9},
-  {id:"hym", org:"Harbour Youth Makers",      name:"Deep Blue youth hackathon",    type:"Hackathon",        share:"named", n:48,  done:41,  acc:.81, shift:1.1,intent:.79, recall:2.4},
-  {id:"nnp", org:"Northshore Nature Parks",   name:"Mangrove ranger walks",        type:"Guided walk",      share:"anon",  n:134, done:88,  acc:.61, shift:.4, intent:.46, recall:1.5},
+  {id:"csc", org:"Coastline Science Centre",  name:"Reef Explorers school visits", type:"School programme", share:"anon",  n:212, done:151, acc:.68, shift:.6, intent:.52, recall:1.7, hist:{acc:[.64,.66,.68],shift:[.5,.6,.6],intent:[.50,.51,.52],recall:[1.4,1.5,1.7]}},
+  {id:"tln", org:"Tidepool Learning Network", name:"Family rockpool weekends",     type:"Family workshop",  share:"named", n:96,  done:74,  acc:.74, shift:.9, intent:.71, recall:1.9, hist:{acc:[.61,.66,.74],shift:[.5,.7,.9],intent:[.66,.69,.71],recall:[1.7,1.8,1.9]}},
+  {id:"hym", org:"Harbour Youth Makers",      name:"Deep Blue youth hackathon",    type:"Hackathon",        share:"named", n:48,  done:41,  acc:.81, shift:1.1,intent:.79, recall:2.4, hist:{acc:[.78,.80,.81],shift:[1.0,1.0,1.1],intent:[.58,.64,.79],recall:[2.2,2.3,2.4]}},
+  {id:"nnp", org:"Northshore Nature Parks",   name:"Mangrove ranger walks",        type:"Guided walk",      share:"anon",  n:134, done:88,  acc:.61, shift:.4, intent:.46, recall:1.5, hist:{acc:[.63,.62,.61],shift:[.5,.4,.4],intent:[.49,.47,.46],recall:[1.6,1.5,1.5]}},
   {id:"osc", org:"Open Seas Classroom",       name:"Virtual reef lessons",         type:"Online module",    share:"anon",  n:7,   done:6,   acc:.83, shift:.2, intent:.33, recall:1.2}
 ];
 const PERIOD = "Jul–Sep 2026";
+const QUARTERS = ["Q1","Q2","Q3"];   // partner history, illustrative; Q3 is the current period
 const CORE = [
   {k:"acc",    label:"Concepts understood", hint:"True/false concept checks",        lo:.4, hi:1,   fmt:x=>pctS(x), target:null},
   {k:"shift",  label:"Agency shift",        hint:"After minus before, on a 1–5 scale", lo:0, hi:1.5, fmt:x=>sgn(x),  target:null},
@@ -1868,8 +1970,14 @@ const DECISION_SEED = [
   {id:"seed-2", prog:"hym", type:"improve",   k:"intent", lesson:null, text:"Add a pledge slide and a one-week buddy check-in to the pitch format.", review:"2026-09-15", createdAt:"2026-08-03T09:00:00Z", demo:true},
   {id:"seed-3", prog:"csc", type:"replicate", k:"intent", lesson:"L2", text:"Trial the hackathon's pledge-and-buddy close at the end of school visits.", review:"2026-11-20", createdAt:"2026-09-18T09:00:00Z", demo:true}
 ];
+const SHARE_SEED = [
+  {id:"sh-1", prog:"tln", kind:"progress", decision:"seed-1", outcome:"improved", value:.74, note:"The jar demo worked: concept scores rose from 61% to 74% over two months. We're keeping it.", createdAt:"2026-09-02T08:00:00Z", demo:true},
+  {id:"sh-2", prog:"csc", kind:"support", topic:"Survey design", note:"Could we adapt the swipe cards for primary-school groups? Some questions are too hard for under-10s.", date:"2026-11-06", createdAt:"2026-10-20T03:00:00Z", demo:true}
+];
+const shares = () => [...SHARE_SEED, ...liveShares].sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
+const progressFor = id => shares().find(x=>x.kind==="progress" && x.decision===id);
 const decisions = () => [...DECISION_SEED, ...liveDecisions].sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
-const partner = {flash:"", draft:null, touched:false};
+const partner = {flash:"", draft:null, touched:false, shTab:"progress", shDecision:null, shFlash:""};
 
 function shareOf(p){ let v=null; try{ v=localStorage.getItem("oceanx-share-"+p.id); }catch(_){} return v||p.share; }
 function programmeStats(){
@@ -1922,8 +2030,10 @@ function renderPartner(){
   const tip=gap && lessons.find(l=>l.match);
 
   const kpi=c=>{ const d=me[c.k]-med(c.k), cls=isNaN(d)||Math.abs(d)<1e-9?"flat":d>0?"up":"down";
+    const h=me.hist?.[c.k];
     return `<div class="kpi"><div class="v">${c.fmt(me[c.k])}</div><div class="l">${c.label}</div>
-      <div class="delta ${cls}">${isNaN(d)?"–":indDelta(c.k,d)+" vs network median"}</div><div class="s">${c.hint}</div></div>`; };
+      <div class="delta ${cls}">${isNaN(d)?"–":indDelta(c.k,d)+" vs network median"}</div><div class="s">${c.hint}</div>
+      ${h?`${spark(h,c.lo,c.hi)}<div class="spark-lab">${QUARTERS[0]} ${c.fmt(h[0])} → ${QUARTERS[h.length-1]} ${c.fmt(h[h.length-1])} (${indDelta(c.k,h[h.length-1]-h[0])})</div>`:""}</div>`; };
 
   const pos=(v,c)=>Math.max(0,Math.min(100,(v-c.lo)/(c.hi-c.lo)*100));
   const strip=c=>{
@@ -1943,12 +2053,16 @@ function renderPartner(){
 
   const above=CORE.filter(c=>me[c.k]>med(c.k)).length;
   const nextReview=mine.map(x=>x.review).filter(Boolean).sort()[0];
+  const dueReviews=mine.filter(x=>x.review && Date.parse(x.review)<=Date.now() && !progressFor(x.id));
+  $("#p-who-label").textContent = role==="staff" ? "Preview as" : "Signed in as";
   el.innerHTML=`
+  ${role==="staff"?`<p class="admin-note"><b>Admin preview.</b> You're seeing exactly what ${esc(me.org)} sees. Partner sign-ins only ever show their own programme.</p>`:""}
+  ${dueReviews.length?`<div class="p-alert"><p><b>Review due.</b> Your review of "${esc(dueReviews[0].text.replace(/\.$/,""))}" was due ${shortDate(dueReviews[0].review)}. Tell OceanX how it went.</p><button class="btn alt" data-checkin="${dueReviews[0].id}">Send a progress update</button></div>`:""}
   <div class="p-glance" aria-label="At a glance">
     <span>Above the network median on <b>${above} of ${CORE.length}</b> indicators</span>
     <span><b>${me.done}</b> learners debriefed</span>
     <span><b>${mine.length}</b> decision${mine.length===1?"":"s"} logged</span>
-    <span>${nextReview?`Next review <b>${shortDate(nextReview)}</b>`:"No review booked"}</span>
+    <span>${dueReviews.length?`Review overdue since <b>${shortDate(dueReviews[0].review)}</b>`:(()=>{ const nx=mine.map(x=>x.review).filter(r=>r&&Date.parse(r)>Date.now()).sort()[0]; return nx?`Next review <b>${shortDate(nx)}</b>`:"No review booked"; })()}</span>
     <span>Network North Star <b>${pctS(ns.pct)}</b></span>
   </div>
   <div class="p-hero">
@@ -2034,7 +2148,8 @@ function renderPartner(){
       </div>
     </div>
   </div>
-  <p class="note">Partner organisations, programmes and their figures are fictional, for illustration. The OceanX tour row is calculated live from this prototype's visitor records, including the labelled demo records.</p>`;
+  ${shareCard(who,me,mine,P)}
+  <p class="note">Partner organisations, programmes and their figures are fictional, for illustration, as is each programme's Q1 and Q2 history. The OceanX tour row is calculated live from this prototype's visitor records, including the labelled demo records.</p>`;
 
   el.querySelectorAll("[data-adopt]").forEach(b=>b.onclick=()=>{
     const l=LESSONS.find(x=>x.id===b.dataset.adopt); if(!l) return;
@@ -2045,6 +2160,7 @@ function renderPartner(){
   $("#d-save").onclick=()=>saveDecision(who);
   el.querySelectorAll(".dform select,.dform input,.dform textarea").forEach(f=>f.addEventListener("input",()=>{partner.touched=true;}));
   el.querySelectorAll('input[name="p-share"]').forEach(r=>r.onchange=()=>{ try{ localStorage.setItem("oceanx-share-"+who,r.value); }catch(_){} renderPartner(); });
+  bindShare(el,who);
 }
 function decisionItem(x,who,P){
   const p=P.find(q=>q.id===x.prog), l=LESSONS.find(q=>q.id===x.lesson);
@@ -2064,7 +2180,7 @@ async function saveDecision(who){
   partner.draft=null; partner.touched=false; partner.flash="Decision saved. It now counts towards the North Star.";
   renderPartner(); renderDash();
 }
-$("#p-who").onchange=()=>{ try{ localStorage.setItem("oceanx-partner-who",$("#p-who").value); }catch(_){} partner.flash=""; partner.draft=null; partner.touched=false; renderPartner(); };
+$("#p-who").onchange=()=>{ try{ localStorage.setItem("oceanx-partner-who",$("#p-who").value); }catch(_){} partner.flash=""; partner.draft=null; partner.touched=false; partner.shDecision=null; partner.shFlash=""; renderPartner(); };
 $("#p-print").onclick=()=>window.print();
 
 /* First glance for OceanX: tour health, who can be followed up, and the next moves with each partner. */
@@ -2074,13 +2190,13 @@ function partnerMoves(P){
   const eligible=P.filter(p=>p.n>=MIN_N), med=k=>median(eligible.map(p=>p[k]).filter(v=>!isNaN(v)));
   const D=decisions(), moves=[], now=Date.now();
   P.filter(p=>!p.live).forEach(p=>{
-    if(p.n<MIN_N){ moves.push({kind:"data", t:`<b>${esc(p.org)}</b> has ${p.n} responses. Help them reach ${MIN_N} so their ${esc(p.type.toLowerCase())} joins the benchmarks.`}); return; }
+    if(p.n<MIN_N){ moves.push({kind:"data", prog:p.id, org:p.org, plain:`Help them reach ${MIN_N} responses so their ${p.type.toLowerCase()} joins the benchmarks (now ${p.n}).`, t:`<b>${esc(p.org)}</b> has ${p.n} responses. Help them reach ${MIN_N} so their ${esc(p.type.toLowerCase())} joins the benchmarks.`}); return; }
     const gaps=CORE.map(c=>({c, rel:(p[c.k]-med(c.k))/(c.hi-c.lo), d:p[c.k]-med(c.k)})).sort((a,b)=>a.rel-b.rel);
     const above=CORE.filter(c=>p[c.k]>med(c.k)).length;
     const hasDec=D.some(d=>d.prog===p.id);
     const g=gaps[0], lesson=LESSONS.find(l=>l.k===g.c.k && l.prog!==p.id);
-    if(g.rel<-0.05 && !hasDec) moves.push({kind:"support", rank:g.rel, t:`<b>${esc(p.org)}</b> is ${indDelta(g.c.k,g.d).replace("-","")} below the network on ${esc(g.c.label.toLowerCase())} and hasn't logged a decision.${lesson?` Introduce ${esc(poss(P.find(x=>x.id===lesson.prog).org))} idea: ${esc(lesson.title.charAt(0).toLowerCase()+lesson.title.slice(1))}.`:""}`});
-    else if(above>=3) moves.push({kind:"scale", rank:-1, t:`<b>${esc(p.org)}</b> leads on ${above} of 4 indicators. A candidate for expansion funding, and for presenting at the next partner session.`});
+    if(g.rel<-0.05 && !hasDec) moves.push({kind:"support", rank:g.rel, prog:p.id, org:p.org, plain:`${indDelta(g.c.k,g.d).replace("-","")} below the network on ${g.c.label.toLowerCase()} with no decision logged.${lesson?` Introduce ${poss(P.find(x=>x.id===lesson.prog).org)} idea: ${lesson.title.charAt(0).toLowerCase()+lesson.title.slice(1)}.`:""}`, t:`<b>${esc(p.org)}</b> is ${indDelta(g.c.k,g.d).replace("-","")} below the network on ${esc(g.c.label.toLowerCase())} and hasn't logged a decision.${lesson?` Introduce ${esc(poss(P.find(x=>x.id===lesson.prog).org))} idea: ${esc(lesson.title.charAt(0).toLowerCase()+lesson.title.slice(1))}.`:""}`});
+    else if(above>=3) moves.push({kind:"scale", rank:-1, prog:p.id, org:p.org, plain:`Leads on ${above} of 4 indicators. Invite them to present at the next partner session, and consider them for expansion funding.`, t:`<b>${esc(p.org)}</b> leads on ${above} of 4 indicators. A candidate for expansion funding, and for presenting at the next partner session.`});
   });
   D.filter(d=>d.review).forEach(d=>{ const due=Date.parse(d.review), p=P.find(x=>x.id===d.prog); if(!p||isNaN(due)) return;
     if(due<now) moves.push({kind:"review", rank:-.5, t:`<b>${esc(poss(p.org))}</b> review was due ${shortDate(d.review)}: check whether ${esc((IND_LABEL[d.k]||"the indicator").toLowerCase())} moved after the change (${esc(d.text.replace(/\.$/,""))}).`});
@@ -2091,28 +2207,266 @@ function partnerMoves(P){
 function staffGlance(R,I){
   const P=programmeStats(), ns=northStar(P);
   const el=P.filter(q=>q.n>=MIN_N), med=k=>median(el.map(q=>q[k]).filter(v=>!isNaN(v)));
-  const reach=I.done.filter(r=>r.contact?.consent);
   const behind=P.filter(p=>!p.live && p.n>=MIN_N && CORE.filter(c=>p[c.k]<med(c.k)).length>=2);
-  const met=[I.recall>=TARGETS.recall, I.intent>=TARGETS.intent].filter(Boolean).length;
-  const moves=partnerMoves(P).slice(0,4);
-  const label={support:"Support",scale:"Scale",review:"Review",data:"Data"};
+  const reg=R.filter(r=>r.contact?.email), Q=followUps(R).filter(q=>!q.done);
+  const overdue=Q.filter(q=>q.state==="overdue").length, soon=Q.filter(q=>q.state==="soon").length;
+  const bar=(lab,n)=>`<div><i style="width:${100*ratio(n,R.length)||0}%"></i><span>${lab}</span><b>${n}</b></div>`;
   return `<section class="glance" aria-labelledby="glance-h">
     <div class="glance-head"><h2 id="glance-h">At a glance: the tour and the partner network</h2><span class="small muted">What to act on this week</span></div>
     <div class="glance-tiles">
-      <div class="gt"><span class="l">Tour</span><span class="v">${I.done.length} <small style="font-size:.9rem;color:var(--muted);font-weight:600">debriefed</small></span><span class="s">${met} of 2 learning targets met · ${pctS(I.acc)} of concepts understood</span></div>
-      <div class="gt"><span class="l">Reachable for follow-up</span><span class="v">${reach.length}</span><span class="s">${pctS(ratio(reach.length,I.done.length))} of debriefed visitors left an email</span>
-        ${reach.length?`<button class="btn ghost" id="fu-btn">Send 2-week check-in</button>`:""}</div>
+      <div class="gt"><span class="l">Visitor funnel</span>
+        <div class="funnel">${bar("Planned on the iPad",R.length)}${bar("Registered on phone",reg.length)}${bar("Debriefed",I.done.length)}</div>
+        <span class="s">${R.length-reg.length} planned but never scanned, so they can't be followed up</span></div>
+      <div class="gt"><span class="l">Follow-ups</span><span class="v">${overdue} <small style="font-size:.9rem;color:var(--muted);font-weight:600">overdue</small></span><span class="s">${soon} more due in the next 14 days · ${reg.filter(r=>r.contact.marketing).length} visitors opted in to news</span>
+        <button class="btn ghost" data-jump="queue">Open the queue</button></div>
       <div class="gt"><span class="l">Network North Star</span><span class="v">${pctS(ns.pct)}</span><span class="s">${ns.count} of ${ns.total} programmes logged an evidence-based decision</span></div>
       <div class="gt"><span class="l">Partners behind</span><span class="v">${behind.length}</span><span class="s">Below the network median on 2 or more indicators</span>
         <button class="btn ghost" data-go="partner">Open the partner hub</button></div>
     </div>
-    ${moves.length?`<h3 style="margin-top:16px;font-size:.98rem">Next moves with partners</h3><ul class="moves">${moves.map(m=>`<li><span class="mk ${m.kind}">${label[m.kind]}</span><span>${m.t}</span></li>`).join("")}</ul>`:""}
   </section>`;
+}
+
+/* ================= follow-up queue: every action OceanX owes, each with a date it can change ================= */
+const DAY=864e5;
+const isoDay = t => new Date(t).toISOString().slice(0,10);
+const addDays = (iso,n) => isoDay(Date.parse(iso)+n*DAY);
+const mondayOf = iso => { const d=new Date(iso+"T00:00:00Z"); const k=(d.getUTCDay()+6)%7; return isoDay(d.getTime()-k*DAY); };
+const NEXT_PARTNER_SESSION = "2026-11-26";
+const queue = {filter:"open"};
+let liveFollowups = [];   // "followups" collection: {id, due, done, doneAt}
+let liveShares = [];      // "shares" collection: partner updates, results and support requests
+function fuState(id){ return liveFollowups.find(f=>f.id===id)||{}; }
+function followUps(R){
+  const items=[], today=isoDay(Date.now()), P=programmeStats();
+  const demoDone=(list,due)=>list.every(x=>x.demo) && Date.parse(due)<Date.now()-28*DAY;   // older demo follow-ups count as already handled
+  const add=(o)=>{ const st=fuState(o.id); const due=st.due||o.due; const done=!!(st.done||o.autoDone);
+    const days=Math.round((Date.parse(due)-Date.parse(today))/DAY);
+    items.push({...o, due, done, doneAt:st.doneAt||o.autoDoneAt, state: done?"done": days<0?"overdue": days<=14?"soon":"upcoming", days}); };
+  // visitors: two-week check-ins, batched by week
+  const groups={};
+  R.filter(r=>r.status==="complete" && r.contact?.email).forEach(r=>{ const due=r.contact.followUpDue||followUpDate(r.completedAt); const k=mondayOf(due); (groups[k]=groups[k]||[]).push({r,due,demo:r.demo}); });
+  Object.entries(groups).forEach(([wk,list])=>{ const due=list.map(x=>x.due).sort()[0], auto=demoDone(list,due);
+    add({id:"vc:"+wk, kind:"Visitors", who:`${list.length} visitor${list.length===1?"":"s"}`, what:`Send the three-question check-in to visitors who debriefed${list.length>1?" that week":""}`, due, autoDone:auto, autoDoneAt:auto?due:null, codes:list.map(x=>x.r.code)}); });
+  // visitors: registered but never finished the debrief
+  const rem={}; R.filter(r=>r.status==="started" && r.contact?.email).forEach(r=>{ const due=addDays(isoDay(Date.parse(r.contact.registeredAt||r.createdAt)),1); const k=mondayOf(due); (rem[k]=rem[k]||[]).push({due,demo:r.demo}); });
+  Object.entries(rem).forEach(([wk,list])=>{ const due=list.map(x=>x.due).sort()[0], auto=demoDone(list,due);
+    add({id:"dr:"+wk, kind:"Visitors", who:`${list.length} visitor${list.length===1?"":"s"}`, what:"Remind visitors who registered but didn't finish the debrief (lifts completion)", due, autoDone:auto, autoDoneAt:auto?due:null}); });
+  // exhibits: stops flagged for review get a re-measure date
+  const last=R.map(r=>r.completedAt).filter(Boolean).sort().pop()||new Date().toISOString();
+  stopTable(R).filter(s=>s.status==="review").forEach(s=>add({id:"sm:"+s.id, kind:"Exhibit", who:STOPS[s.id].name, what:`Fix the most common misconception${s.topWrong?` ("${s.topWrong[0].replace(/^(Doubted|Believed): /,"")}")`:""}, then re-measure concept accuracy (now ${pctS(s.acc)})`, due:addDays(isoDay(Date.parse(last)),28)}));
+  // partners: decision reviews (done automatically once the partner sends a progress update)
+  decisions().filter(d=>d.review).forEach(d=>{ const p=P.find(x=>x.id===d.prog); if(!p) return; const up=progressFor(d.id);
+    add({id:"pr:"+d.id, kind:"Partner", who:p.org, what:`Review: did ${(IND_LABEL[d.k]||"the indicator").toLowerCase()} move after "${d.text.replace(/\.$/,"")}"?`, due:d.review, autoDone:!!up, autoDoneAt:up?.createdAt, note:up?`Partner reported: ${OUTCOME[up.outcome]||up.outcome}`:""}); });
+  // partners: support, scale and data moves from the benchmarks
+  partnerMoves(P).filter(m=>m.kind!=="review").forEach(m=>add({id:"pm:"+m.kind+":"+m.prog, kind:"Partner", who:m.org, what:m.plain, due:m.kind==="scale"?NEXT_PARTNER_SESSION:m.kind==="data"?"2026-11-30":"2026-11-07"}));
+  // partners: support requests with the date they asked for
+  shares().filter(x=>x.kind==="support").forEach(x=>{ const p=P.find(q=>q.id===x.prog); add({id:"ps:"+x.id, kind:"Partner", who:p?.org||"", what:`Support call requested: ${x.topic}. "${x.note}"`, due:x.date||addDays(isoDay(Date.parse(x.createdAt)),7)}); });
+  const order={overdue:0,soon:1,upcoming:2,done:3};
+  return items.sort((a,b)=>order[a.state]-order[b.state]||a.due.localeCompare(b.due));
+}
+async function setFollowUp(id,patch){
+  const row={...fuState(id), id, ...patch};
+  liveFollowups=[...liveFollowups.filter(f=>f.id!==id), row];
+  if(db){ try{ await db.collection("followups").doc(id).set(row); }catch(e){ console.warn("followup write",e); } }
+  renderDash();
+}
+function queueCard(R){
+  const all=followUps(R), open=all.filter(q=>!q.done);
+  const list= queue.filter==="open"?open : queue.filter==="done"?all.filter(q=>q.done) : all;
+  const stLab={overdue:"Overdue",soon:"Due soon",upcoming:"Upcoming",done:"Done"};
+  const when=q=>q.state==="done"?(q.doneAt?`done ${shortDate(q.doneAt)}`:"done"):q.days<0?`${-q.days} day${q.days===-1?"":"s"} late`:q.days===0?"today":`in ${q.days} day${q.days===1?"":"s"}`;
+  const inbox=shares().slice(0,5);
+  return `<div class="grid2 qgrid">
+  <div class="card" id="queue">
+    <div class="queue-head"><h3>Follow-up queue</h3>
+      <div class="seg-tabs" role="group" aria-label="Show">${[["open",`Open (${open.length})`],["done","Done"],["all","All"]].map(([k,l])=>`<button type="button" data-qf="${k}" aria-pressed="${queue.filter===k}">${l}</button>`).join("")}</div></div>
+    <p class="hint">Every follow-up has a date you can change: visitor check-ins (two weeks after their debrief by default), debrief reminders, exhibit re-measures and partner reviews. Partner reviews close themselves when the partner sends a progress update.</p>
+    <div class="tblwrap"><table class="queue">
+      <thead><tr><th>Status</th><th>For</th><th>Action</th><th>Due</th><th></th></tr></thead>
+      <tbody>${list.map(q=>`<tr class="${q.done?"isdone":""}"><td><span class="st ${q.state}">${stLab[q.state]}</span><div class="small muted" style="margin-top:3px">${when(q)}</div></td>
+        <td><span class="qtype">${q.kind}</span><div class="small">${esc(q.who)}</div></td>
+        <td class="small">${esc(q.what)}${q.note?`<div class="muted" style="margin-top:2px">${esc(q.note)}</div>`:""}</td>
+        <td><input type="date" value="${q.due}" data-fu-due="${esc(q.id)}" aria-label="Due date" ${q.done?"disabled":""}></td>
+        <td>${q.done?(!fuState(q.id).done?"":`<button class="qbtn" data-fu-undo="${esc(q.id)}">Reopen</button>`):`<button class="qbtn" data-fu-done="${esc(q.id)}">Mark done</button>`}</td></tr>`).join("")||`<tr><td colspan="5" class="muted">Nothing here.</td></tr>`}</tbody>
+    </table></div>
+  </div>
+  <div class="card">
+    <h3>From partners</h3>
+    <p class="hint">Progress updates, results and support requests partners send from their hub.</p>
+    <ul class="inbox">${inbox.map(x=>{ const p=PROGRAMMES.find(q=>q.id===x.prog); const dec=x.decision?decisions().find(d=>d.id===x.decision):null;
+      const body= x.kind==="progress"?`<b>Progress update</b> · ${esc(OUTCOME[x.outcome]||x.outcome)}${x.value!=null&&dec?` · ${esc(IND_LABEL[dec.k])} now ${indFmt(dec.k,x.value)}`:""}<br>${esc(x.note||"")}`
+        : x.kind==="results"?`<b>New results</b> · ${esc(x.period)} · ${x.n} participants, ${pctS(x.acc)} concepts, ${pctS(x.intent)} intent`
+        : `<b>Support request</b> · ${esc(x.topic)}${x.date?` · call on ${shortDate(x.date)}`:""}<br>${esc(x.note||"")}`;
+      return `<li class="${x.kind==="support"?"support":""}">${body}<small>${esc(p?.org||"")} · ${shortDate(x.createdAt)}${x.demo?" · demo":""}</small></li>`; }).join("")||`<li class="muted">Nothing yet.</li>`}</ul>
+  </div></div>`;
+}
+function bindQueue(el){
+  el.querySelectorAll("[data-qf]").forEach(b=>b.onclick=()=>{ queue.filter=b.dataset.qf; renderDash(); $("#queue")?.scrollIntoView({block:"nearest"}); });
+  el.querySelectorAll("[data-fu-due]").forEach(i=>i.onchange=()=>{ if(i.value) setFollowUp(i.dataset.fuDue,{due:i.value}); });
+  el.querySelectorAll("[data-fu-done]").forEach(b=>b.onclick=()=>setFollowUp(b.dataset.fuDone,{done:true, doneAt:new Date().toISOString()}));
+  el.querySelectorAll("[data-fu-undo]").forEach(b=>b.onclick=()=>setFollowUp(b.dataset.fuUndo,{done:false, doneAt:null}));
+  el.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>$("#"+b.dataset.jump)?.scrollIntoView({behavior:"smooth",block:"start"}));
+}
+
+/* ================= progress over time: then vs now ================= */
+/* Months before the AI-debrief pilot (May–Aug) are illustrative; months with real records are calculated live. */
+const TOUR_HISTORY = [
+  {m:"2026-05", completion:.22, acc:.58, recall:1.1, intent:.38, shift:.3},
+  {m:"2026-06", completion:.24, acc:.60, recall:1.2, intent:.41, shift:.3},
+  {m:"2026-07", completion:.25, acc:.61, recall:1.2, intent:.40, shift:.4},
+  {m:"2026-08", completion:.27, acc:.63, recall:1.3, intent:.44, shift:.4}
+];
+const TREND_METRICS = [
+  {k:"completion", label:"Debrief completion", lo:0, hi:1, fmt:pctS, target:null, hint:"Visitors who debriefed out of everyone who planned a route"},
+  {k:"acc", label:"Concepts understood", lo:.4, hi:1, fmt:pctS, target:null, hint:"True/false concept checks"},
+  {k:"recall", label:"Learning depth", lo:0, hi:3, fmt:f1, target:TARGETS.recall, hint:"0–3 rubric"},
+  {k:"intent", label:"Actionable intent", lo:0, hi:1, fmt:pctS, target:TARGETS.intent, hint:"Stated behaviour change, pledge or actionable feedback"},
+  {k:"shift", label:"Agency shift", lo:0, hi:1.5, fmt:sgn, target:null, hint:"After minus before, 1–5 scale"},
+  {k:"ns", label:"Network North Star", lo:0, hi:1, fmt:pctS, target:null, hint:"Programmes with an evidence-based decision"}
+];
+const trend = {k:"completion"};
+const monthLabel = m => new Date(m+"-01T00:00:00Z").toLocaleDateString(undefined,{month:"short",year:"numeric",timeZone:"UTC"});   // "Sep 2026"
+const monthShort = m => new Date(m+"-01T00:00:00Z").toLocaleDateString(undefined,{month:"short",timeZone:"UTC"});                   // "Sep"
+function trendSeries(){
+  const R=allRows.filter(r=>r&&r.code), byM={};
+  R.forEach(r=>{ const m=String(r.createdAt).slice(0,7); (byM[m]=byM[m]||[]).push(r); });
+  const live=Object.entries(byM).filter(([m,list])=>list.length>=5).map(([m,list])=>{ const I=impact(list);
+    return {m, completion:I.loop, acc:I.acc, recall:I.recall, intent:I.intent, shift:I.shift, live:true, n:list.length}; });
+  const months=[...TOUR_HISTORY.filter(h=>!live.some(l=>l.m===h.m)), ...live].sort((a,b)=>a.m.localeCompare(b.m));
+  const nowM=new Date().toISOString().slice(0,7);
+  for(let m=months[months.length-1].m; m<nowM;){ const d=new Date(m+"-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth()+1); m=d.toISOString().slice(0,7);
+    months.push({m, completion:NaN, acc:NaN, recall:NaN, intent:NaN, shift:NaN}); }
+  // the North Star is real for every month: programmes with a decision logged by the end of that month
+  const total=PROGRAMMES.length;
+  months.forEach(x=>{ const end=new Date(Date.UTC(+x.m.slice(0,4), +x.m.slice(5,7), 1)).toISOString();
+    x.ns=new Set(decisions().filter(d=>String(d.createdAt)<end).map(d=>d.prog)).size/total; });
+  return months;
+}
+function trendEvents(k){
+  if(k==="ns") return decisions().map(d=>({m:String(d.createdAt).slice(0,7), t:PROGRAMMES.find(p=>p.id===d.prog)?.org.split(" ")[0]+" decision"}));
+  return [{m:"2026-09", t:"AI debrief pilot starts"}];
+}
+function trendCard(){
+  const S=trendSeries(), M=TREND_METRICS.find(x=>x.k===trend.k)||TREND_METRICS[0];
+  const pts=S.filter(x=>!isNaN(x[M.k]));
+  const W=640,H=230,l=46,r=16,t=18,b=34, X=i=>l+(pts.length<2?0:i*(W-l-r)/(pts.length-1)), Y=v=>t+(1-(v-M.lo)/(M.hi-M.lo))*(H-t-b);
+  let g="";
+  [0,.25,.5,.75,1].forEach(f=>{ const v=M.lo+f*(M.hi-M.lo), y=Y(v); g+=`<line x1="${l}" x2="${W-r}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-dasharray="${f?"2 4":""}"/><text x="${l-8}" y="${y+4}" text-anchor="end">${M.fmt(v)}</text>`; });
+  if(M.target!=null){ const y=Y(M.target); g+=`<line x1="${l}" x2="${W-r}" y1="${y}" y2="${y}" stroke="var(--good)" stroke-dasharray="5 4" stroke-width="1.5"/><text x="${W-r}" y="${y-6}" text-anchor="end" style="fill:var(--good)">Target ${M.fmt(M.target)}</text>`; }
+  const ev=trendEvents(M.k); const seen={};
+  ev.forEach(e=>{ const i=pts.findIndex(p=>p.m===e.m); if(i<0) return; const n=(seen[e.m]=(seen[e.m]||0)+1); const x=X(i);
+    const flip=x+5+e.t.length*5.9>W-r;   // only flip when the label would run off the chart
+    g+=`<line x1="${x}" x2="${x}" y1="${t}" y2="${H-b}" stroke="var(--glow)" stroke-dasharray="3 3" opacity=".7"/><text x="${flip?x-5:x+5}" y="${t+10+(n-1)*13}" text-anchor="${flip?"end":"start"}" style="fill:var(--glow);font-size:10.5px">${esc(e.t)}</text>`; });
+  g+=`<path d="${pts.map((p,i)=>(i?"L":"M")+X(i)+","+Y(p[M.k])).join(" ")}" fill="none" stroke="var(--tide)" stroke-width="2.5"/>`;
+  pts.forEach((p,i)=>{ g+=`<circle cx="${X(i)}" cy="${Y(p[M.k])}" r="5" fill="${p.live||M.k==="ns"?"var(--tide)":"var(--card)"}" stroke="var(--tide)" stroke-width="2"><title>${monthLabel(p.m)}: ${M.fmt(p[M.k])}${p.live?` (live, ${p.n} visitors)`:M.k==="ns"?"":" (illustrative)"}</title></circle>
+    <text x="${X(i)}" y="${H-12}" text-anchor="middle">${monthShort(p.m)}</text>`; });
+  const cur=pts[pts.length-1], prev=pts[pts.length-2], first=pts[0];
+  const dlt=(a,b2)=>M.k==="recall"||M.k==="shift"?sgn(a-b2):((a-b2)>0?"+":"")+Math.round((a-b2)*100)+" pts";
+  const rowsT=TREND_METRICS.map(x=>{ const P2=S.filter(s=>!isNaN(s[x.k])); const c=P2[P2.length-1], pv=P2[P2.length-2];
+    const d=c&&pv?c[x.k]-pv[x.k]:NaN; const cls=isNaN(d)||Math.abs(d)<1e-9?"flat":d>0?"up":"down";
+    return `<tr><td>${x.label}</td><td class="num">${pv?x.fmt(pv[x.k]):"–"} <span class="muted small">${pv?monthLabel(pv.m):""}</span></td><td class="num"><b>${c?x.fmt(c[x.k]):"–"}</b> <span class="muted small">${c?monthLabel(c.m):""}</span></td><td class="num"><span class="delta ${cls}">${c&&pv?(x.k==="recall"||x.k==="shift"?sgn(d):(d>0?"+":"")+Math.round(d*100)+" pts"):"–"}</span></td><td class="num">${x.target!=null?x.fmt(x.target):"–"}</td></tr>`; }).join("");
+  return `<div class="card trend" style="margin-top:20px" id="trend">
+    <h3>Progress over time</h3>
+    <p class="hint">How each metric has moved month by month, with the changes that might explain it. Hollow points (May–Aug) are illustrative history from before the pilot; filled points are calculated from real records.</p>
+    <div class="trend-tabs" role="group" aria-label="Metric">${TREND_METRICS.map(x=>`<button type="button" data-tk="${x.k}" aria-pressed="${x.k===M.k}">${x.label}</button>`).join("")}</div>
+    <div class="trend-wrap">
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${M.label} by month: ${pts.map(p=>monthLabel(p.m)+" "+M.fmt(p[M.k])).join(", ")}`)}">${g}</svg>
+      <div class="tsum">
+        <div><span>Now (${cur?monthLabel(cur.m):"–"})</span><b>${cur?M.fmt(cur[M.k]):"–"}</b></div>
+        <div><span>Previous month</span><b>${prev?M.fmt(prev[M.k]):"–"}</b><span>${cur&&prev?dlt(cur[M.k],prev[M.k])+" since "+monthLabel(prev.m):""}</span></div>
+        <div><span>Since ${first?monthLabel(first.m):"–"}</span><b>${cur&&first?dlt(cur[M.k],first[M.k]):"–"}</b><span>${esc(M.hint)}</span></div>
+      </div>
+    </div>
+    <details style="margin-top:12px"><summary class="small" style="cursor:pointer">Then vs now, every metric</summary>
+      <div class="tblwrap"><table class="then"><thead><tr><th>Metric</th><th class="num">Previous</th><th class="num">Current</th><th class="num">Change</th><th class="num">Target</th></tr></thead><tbody>${rowsT}</tbody></table></div>
+    </details>
+  </div>`;
+}
+function bindTrend(el){ el.querySelectorAll("[data-tk]").forEach(b=>b.onclick=()=>{ trend.k=b.dataset.tk; renderDash(); $("#trend")?.scrollIntoView({block:"nearest"}); }); }
+function spark(vals,lo,hi){
+  const W=120,H=28, X=i=>4+i*(W-8)/(vals.length-1), Y=v=>H-4-(v-lo)/(hi-lo)*(H-8);
+  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="${vals.map((v,i)=>(i?"L":"M")+X(i)+","+Y(v)).join(" ")}" fill="none" stroke="var(--tide)" stroke-width="2"/>${vals.map((v,i)=>`<circle cx="${X(i)}" cy="${Y(v)}" r="${i===vals.length-1?3.5:2.5}" fill="${i===vals.length-1?"var(--glow)":"var(--tide)"}"/>`).join("")}</svg>`;
+}
+
+/* ================= partner hub: share with OceanX, and the follow-ups that come back ================= */
+const OUTCOME = {improved:"It improved", same:"No change yet", early:"Too early to tell", worse:"It got worse"};
+function shareCard(who,me,mine,P){
+  const t=partner.shTab, open=mine.filter(x=>!progressFor(x.id));
+  const sel=partner.shDecision||open[0]?.id||mine[0]?.id||"";
+  const dec=mine.find(x=>x.id===sel);
+  const myShares=shares().filter(x=>x.prog===who);
+  const fu=[...mine.filter(x=>x.review).map(x=>{ const up=progressFor(x.id); const late=!up&&Date.parse(x.review)<Date.now();
+      return {d:x.review, t:`Review: ${x.text.replace(/\.$/,"")}`, s:up?"done":late?"overdue":"upcoming", l:up?"Update sent":late?"Overdue":"Upcoming"}; }),
+    ...myShares.filter(x=>x.kind==="support"&&x.date).map(x=>({d:x.date, t:`Support call with OceanX: ${x.topic}`, s:Date.parse(x.date)<Date.now()?"done":"upcoming", l:Date.parse(x.date)<Date.now()?"Held":"Booked"})),
+    {d:NEXT_PARTNER_SESSION, t:"Next partner network session (all partners)", s:"upcoming", l:"Upcoming"}].sort((a,b)=>a.d.localeCompare(b.d));
+  const msg=partner.shFlash;
+  return `<div class="grid2">
+  <div class="card no-print" id="share-ox">
+    <h3>Share with OceanX</h3>
+    <p class="hint">Send OceanX what's happening with your programme. This goes to OceanX only, not to other partners.</p>
+    <div class="sh-tabs" role="group" aria-label="What to send">${[["progress","Progress update"],["results","New results"],["support","Ask for support"]].map(([k,l])=>`<button type="button" data-sh="${k}" aria-pressed="${t===k}">${l}</button>`).join("")}</div>
+    ${t==="progress"?(mine.length?`<div class="dform">
+        <label class="full">Which decision?<select id="sh-dec">${mine.map(x=>`<option value="${x.id}"${x.id===sel?" selected":""}>${esc(x.text)}${progressFor(x.id)?" (update sent)":""}</option>`).join("")}</select></label>
+        <div class="full" style="font-size:.86rem;font-weight:600">Did ${esc((IND_LABEL[dec?.k]||"the indicator").toLowerCase())} move?
+          <div class="radios" style="margin-top:6px">${Object.entries(OUTCOME).map(([k,v],i)=>`<label><input type="radio" name="sh-out" value="${k}"${i===0?" checked":""}>${v}</label>`).join("")}</div></div>
+        <label>New value (optional)<input type="number" id="sh-val" step="any" placeholder="${dec&&(dec.k==="recall"||dec.k==="shift")?"e.g. 1.8":"e.g. 58 (%)"}"></label>
+        <label class="full">What happened?<textarea id="sh-note" maxlength="300" placeholder="What changed, what you noticed, what's next"></textarea></label>
+        <div class="acts"><button class="btn" id="sh-send" data-kind="progress">Send to OceanX</button><span class="${msg.startsWith("Add")?"err":"ok-msg"}">${esc(msg)}</span></div></div>`
+      :`<p class="small muted">Log a decision first, then send OceanX updates on how it's going.</p>`)
+    : t==="results"?`<div class="dform">
+        <label>Period<select id="sh-period"><option>Oct–Dec 2026</option><option>Jul–Sep 2026</option></select></label>
+        <label>Participants<input type="number" id="sh-n" min="0" placeholder="e.g. 120"></label>
+        <label>Concepts understood (%)<input type="number" id="sh-acc" min="0" max="100" placeholder="e.g. 66"></label>
+        <label>Actionable intent (%)<input type="number" id="sh-int" min="0" max="100" placeholder="e.g. 52"></label>
+        <div class="acts"><button class="btn" id="sh-send" data-kind="results">Send to OceanX</button><span class="${msg.startsWith("Add")?"err":"ok-msg"}">${esc(msg)}</span></div>
+        <p class="small muted full" style="margin:0">In a full version this would accept your survey export directly. OceanX checks submissions before they appear in the benchmarks.</p></div>`
+    :`<div class="dform">
+        <label>Topic<select id="sh-topic"><option>Survey design</option><option>Data collection</option><option>Exhibit or content ideas</option><option>Funding or reporting</option><option>Something else</option></select></label>
+        <label>Preferred date for a call<input type="date" id="sh-date"></label>
+        <label class="full">What do you need?<textarea id="sh-note" maxlength="300" placeholder="Tell OceanX what would help"></textarea></label>
+        <div class="acts"><button class="btn" id="sh-send" data-kind="support">Send to OceanX</button><span class="${msg.startsWith("Add")?"err":"ok-msg"}">${esc(msg)}</span></div></div>`}
+  </div>
+  <div class="card">
+    <h3>Your follow-ups with OceanX</h3>
+    <p class="hint">Dates you've agreed with OceanX. When a review date arrives, send a progress update and OceanX's follow-up closes automatically.</p>
+    <ul class="fu-list">${fu.map(x=>`<li><span><b>${shortDate(x.d)}</b> · ${esc(x.t)}</span><span class="st ${x.s}">${x.l}</span></li>`).join("")}</ul>
+    ${myShares.length?`<h4 style="margin:16px 0 0;font-size:.92rem">Sent to OceanX</h4><ul class="dlist">${myShares.slice(0,4).map(x=>`<li class="mine">${x.kind==="progress"?`Progress update: ${esc(OUTCOME[x.outcome]||"")}`:x.kind==="results"?`Results for ${esc(x.period)}`:`Support request: ${esc(x.topic)}`}<small>${shortDate(x.createdAt)}${x.demo?" · demo":""}</small></li>`).join("")}</ul>`:""}
+  </div></div>`;
+}
+function bindShare(el,who){
+  el.querySelectorAll("[data-sh]").forEach(b=>b.onclick=()=>{ partner.shTab=b.dataset.sh; partner.shFlash=""; renderPartner(); $("#share-ox")?.scrollIntoView({block:"nearest"}); });
+  el.querySelectorAll("[data-checkin]").forEach(b=>b.onclick=()=>{ partner.shTab="progress"; partner.shDecision=b.dataset.checkin; partner.shFlash=""; renderPartner(); $("#share-ox").scrollIntoView({behavior:"smooth",block:"start"}); });
+  if($("#sh-dec")) $("#sh-dec").onchange=()=>{ partner.shDecision=$("#sh-dec").value; renderPartner(); };
+  const go=$("#sh-send"); if(!go) return;
+  go.onclick=async()=>{
+    const kind=go.dataset.kind, base={id:"sh-"+Date.now().toString(36)+Math.random().toString(36).slice(2,5), prog:who, kind, createdAt:new Date().toISOString(), by:myId||null, demo:false};
+    let row;
+    if(kind==="progress"){
+      const dec=decisions().find(x=>x.id===$("#sh-dec").value), raw=$("#sh-val").value, note=$("#sh-note").value.trim();
+      if(!note){ partner.shFlash="Add a sentence on what happened."; renderPartner(); return; }
+      const v=raw===""?null:Number(raw), val=v==null?null:(dec&&(dec.k==="recall"||dec.k==="shift")?v:v/100);
+      row={...base, decision:dec.id, outcome:(el.querySelector('input[name="sh-out"]:checked')||{}).value||"early", value:val, note};
+    } else if(kind==="results"){
+      const n=Number($("#sh-n").value), a=Number($("#sh-acc").value), i=Number($("#sh-int").value);
+      if(!n||!$("#sh-acc").value||!$("#sh-int").value){ partner.shFlash="Add participants and both percentages."; renderPartner(); return; }
+      row={...base, period:$("#sh-period").value, n, acc:a/100, intent:i/100};
+    } else {
+      const note=$("#sh-note").value.trim();
+      if(!note){ partner.shFlash="Add a sentence on what you need."; renderPartner(); return; }
+      row={...base, topic:$("#sh-topic").value, date:$("#sh-date").value||"", note};
+    }
+    let ok=false;
+    if(db){ try{ await db.collection("shares").doc(row.id).set(row); ok=true; }catch(e){ console.warn("share write",e); } }
+    if(!ok) liveShares=[...liveShares,row];
+    partner.shFlash="Sent. OceanX will see it in their follow-up queue."; partner.shDecision=null;
+    renderPartner(); renderDash();
+  };
 }
 
 /* ================= tabs ================= */
 const VIEW_AUD = {home:"home", pre:"visitor", post:"visitor", dash:"staff", partner:"partner"};
-const AUD_NAME = {visitor:"Visitor", staff:"OceanX staff", partner:"Partner"};
+const AUD_NAME = {visitor:"Visitor", staff:"OceanX admin", partner:"Partner"};
+let role = null;   // chosen on the landing page; OceanX staff are master admins and can open every view
 function lockStaffCard(){
   const c=$("#card-staff"); if(!c) return;
   c.classList.toggle("locked",!isStaff);
@@ -2121,11 +2475,13 @@ function lockStaffCard(){
 }
 function show(v){
   if(v==="dash" && !isStaff) v="home";
+  if(v==="home") role=null;
+  else if(!role || (role!=="staff" && VIEW_AUD[v]!==role)) role = VIEW_AUD[v];   // a visitor or partner only ever sees their own view
   const aud=VIEW_AUD[v]||"home";
   document.body.dataset.aud=aud;
   const nav=$("nav.steps"); nav.hidden = aud==="home";
-  $("#aud-name").textContent = AUD_NAME[aud]||"";
-  document.querySelectorAll("nav.steps [data-view]").forEach(b=>{ b.hidden = b.dataset.aud!==aud; b.setAttribute("aria-selected",b.dataset.view===v); });
+  $("#aud-name").textContent = AUD_NAME[role]||"";
+  document.querySelectorAll("nav.steps [data-view]").forEach(b=>{ b.hidden = role==="staff" ? (b.dataset.view==="dash"&&!isStaff) : b.dataset.aud!==aud; b.setAttribute("aria-selected",b.dataset.view===v); });
   document.querySelectorAll("section.view").forEach(s=>s.classList.toggle("on",s.id==="v-"+v));
   if(v==="dash") renderDash();
   if(v==="partner") renderPartner();
@@ -2133,7 +2489,7 @@ function show(v){
 }
 document.querySelectorAll("nav.steps [data-view]").forEach(b=>b.onclick=()=>show(b.dataset.view));
 $("#nav-home").onclick=()=>show("home");
-document.querySelectorAll("#v-home [data-go]").forEach(b=>b.onclick=()=>show(b.dataset.go));
+document.querySelectorAll("#v-home [data-go]").forEach(b=>b.onclick=()=>{ role=VIEW_AUD[b.dataset.go]; show(b.dataset.go); });
 renderQ(); renderDive(); renderDash(); renderPartner(); lockStaffCard();
 
 /* Ambient "marine snow": slow-sinking particles behind the page */
