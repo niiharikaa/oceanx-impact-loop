@@ -3,7 +3,7 @@
 A low-code prototype for IS615 Digital Transformation Strategy (sponsor: OceanX Education).
 It tests whether a route-personalised AI debrief raises post-tour survey completion and yields richer learning evidence than a static survey, and whether sharing those results across the partner network leads partners to make evidence-based programme decisions (the North Star metric).
 
-**Author:** Koh Yi Jing Priscilla
+**Author:** Koh Yi Jing Priscilla, Niharika Singavajhala
 **Built with:** Claude artifact (used as a Power Apps equivalent)
 **Source file:** `oceanx-impact-loop.html`
 
