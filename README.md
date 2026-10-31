@@ -17,7 +17,7 @@ One workflow, end to end, seen by three audiences:
 |---|---|---|---|
 | Visitor | 1 Route curation (iPad kiosk), 2 Tour guide & survey (own phone) | Sunlit blue, immersive deep-ocean theme with drifting "marine snow" | Only their own route and debrief |
 | OceanX Education staff (master admin) | Impact dashboard, plus every visitor and partner view | Near-black "operations room", blue accent, no animation | Every individual response, scores, exports, and a preview of any partner's hub |
-| Partner | Partner hub | Twilight-zone indigo with a violet accent and gold for "your programme" | Aggregated results only, benchmarked against the network |
+| Partner (organisations running their own programmes) | Partner hub | Twilight-zone indigo with a violet accent and gold for "your programme" | Aggregated results only, benchmarked against the network |
 
 The prototype opens on a **"One tour, three views" landing page** with one card per audience, each in that view's colours and stating what the audience sees and shares (or its access level). Choosing a card opens that view. Visitors and partners only ever see their own tabs; **OceanX is the master admin** and sees every tab, with a **Preview as** picker in the Partner hub that shows exactly what a given partner sees. An **All views** button returns to the landing page. The colours follow the ocean depth story: sunlit (visitor), midnight (OceanX staff), twilight (partner).
 
@@ -33,7 +33,9 @@ The prototype opens on a **"One tour, three views" landing page** with one card 
    - **From partners:** progress updates, new results and support requests sent from the Partner hub.
    - **Progress over time:** each metric month by month (debrief completion, concepts understood, learning depth, actionable intent, agency shift, network North Star), with key events and partner decisions marked on the timeline, previous vs current month, change since the start, and a "then vs now" table.
    - Headline results against targets, the survey method test (AI debrief vs static survey), agency shift, learning depth (0–3 rubric), stop-by-stop review flags with the most common misconception, results by audience, every response (with a ✉ tag for registered visitors), CSV export and AI-drafted programme recommendations.
-4. **Partner hub (partner programme teams):** a partner signs in (simulated with a picker) and sees:
+4. **Partner hub (partner programme teams):** partners are **other organisations running their own ocean-education programmes**, not the exhibition: in the demo, a school-visit programme, family rockpool weekends, a youth hackathon, mangrove ranger walks and online reef lessons. Every programme, including OceanX's own exhibition tour, is measured with the **same OceanX debrief kit**, which is what makes the comparisons fair. A partner signs in (simulated with a picker) and sees:
+   - **How this data was collected:** the kit, the channel (QR codes, a link or a venue tablet), the number of sessions and since when;
+   - **Your debrief kit (setup panel):** programme name, type, audience, how learners reach the debrief, and up to four **key concepts**. The core questions are fixed for everyone: the agency question at the start and end, a true/false card per key concept (the AI writes a matching false statement), one reflection sentence on the 0–3 rubric, and optional pledge cards. The panel previews a learner's card and gives the programme's **start-of-session and end-of-session QR codes** (or its link). Saving tells OceanX, which gets a "check the updated kit" item in its follow-up queue;
    - a **review-due prompt** when a decision's review date has passed without an update;
    - an **at-a-glance strip**: indicators above the network median, learners debriefed, decisions logged, next (or overdue) review and the North Star;
    - **their programme's core indicators** compared with the network median, each with a **Q1 → Q3 sparkline** of their own progress;
@@ -61,12 +63,13 @@ Everything is in one self-contained HTML file:
 
 ## Data model
 
-Four database collections:
+Five database collections:
 
 - `responses`: one record per visitor keyed by route code. The iPad taps create it, phone registration adds `contact` (email, registration time, marketing consent and follow-up due date), and the debrief completes it.
 - `decisions`: one record per partner decision: programme, decision type, indicator it should move, lesson used as evidence (if any), what will change, review date and timestamp.
 - `shares`: what partners send OceanX: progress updates (decision, outcome, new value, note), results (period, participants, concepts, intent) and support requests (topic, preferred date, note).
 - `followups`: OceanX's changes to the follow-up queue: a new due date, or done with the date it was done.
+- `kits`: each partner programme's debrief kit: name, type, audience, channel, key concepts, pledge cards on or off, live-since date. Changes also send a "kit updated" note to OceanX through `shares`.
 
 Partner programmes are reported as aggregates on the same core indicators. The OceanX tour's figures are calculated live from `responses`; the other partners' figures, and their Q1–Q2 history, are fixed illustrative values. The tour's May–August history is illustrative; months with real records, and the North Star in every month, are calculated live.
 
@@ -108,6 +111,7 @@ Saved records, status flags (`pre` → `started` → `complete`), timestamps and
 - The audio guide uses the device's built-in text-to-speech voice reading a short script; where speech isn't supported it plays silently with the transcript.
 - No emails are actually sent; marking a follow-up done only records it. Demo visitors who scanned their QR code carry fictional `@example.com` addresses. A real pilot would need PDPA-compliant notice and consent wording, a retention period and an unsubscribe link; making email required is only defensible because it's needed for the route and follow-up, which is why marketing is a separate optional box.
 - Visitors who plan a route on the iPad but never scan the QR code leave no email and can't be followed up. The funnel on the dashboard shows how many.
+- Partner kits can be set up and edited, but their QR codes and links only open this prototype: partner learners' answers aren't collected live in the demo, so partner results remain illustrative. A pilot would run the same debrief flow as the exhibition for each partner programme, using that programme's key concepts.
 - OceanX admin access and partner sign-in are simulated by the landing page. A real version needs proper logins and roles.
 - In the demo, visitor follow-ups more than four weeks old are shown as already done so the queue looks like a working one.
 - The QR hand-off assumes the visitor is signed in on their phone. A scanned QR link opens the tour guide directly; otherwise an unfinished route's code is pre-filled and the landing page shows first.
@@ -124,6 +128,7 @@ For v4, re-checked at phone width (375 px) and iPad Air portrait and landscape (
 
 ## Version history
 
+- **v5:** partners defined as organisations running their own programmes, all measured with the same OceanX debrief kit; "How this data was collected" on each partner's programme; a debrief kit setup panel (programme details, audience, channel, key concepts, pledge cards, a learner card preview and session QR codes), with kit changes flowing to OceanX's inbox and follow-up queue.
 - **v4:** visitors register with a required email on their phone after scanning the QR code (marketing consent separate and optional), with the iPad kept as an anonymous kiosk that resets itself; OceanX as master admin with access to every view and a "Preview as" partner picker; a dated follow-up queue (visitor check-ins, debrief reminders, exhibit re-measures, partner reviews, support calls) with editable due dates; "Share with OceanX" in the Partner hub (progress updates, results, support requests) with review-due prompts and a partner follow-up list; progress over time for every metric with decisions marked on the timeline, and quarterly sparklines for partners.
 - **v3:** OceanX logo in the top bar on every page (with a "student prototype, not an official OceanX site" note in the footer); at-a-glance panels for OceanX (with "Next moves with partners") and for partners; optional visitor email with consent for a two-week follow-up; iPad layout checks.
 - **v2:** landing page with three audience views (visitor, OceanX staff, partner) in sunlit, midnight and twilight colours; Partner hub with network benchmarks, shared lessons, decision log and North Star; survey method test shown on the staff dashboard.
